@@ -1,0 +1,36 @@
+Class MainWindow
+    Private Sub button_Click(sender As Object, e As RoutedEventArgs)
+
+    End Sub
+
+    Private Sub MenuItem_Click(sender As Object, e As RoutedEventArgs)
+
+    End Sub
+
+    Private Sub MenuItem_Click_1(sender As Object, e As RoutedEventArgs)
+
+    End Sub
+
+    Private Sub MenuItem_Click_2(sender As Object, e As RoutedEventArgs)
+    End Sub
+
+    Private Sub button1_Click(sender As Object, e As RoutedEventArgs)
+
+    End Sub
+
+    Private Sub textBox1_TextChanged(sender As Object, e As TextChangedEventArgs)
+
+    End Sub
+
+    Private Sub textBox1_TextChanged_1(sender As Object, e As TextChangedEventArgs)
+
+    End Sub
+
+    Private Sub button1_Click_1(sender As Object, e As RoutedEventArgs)
+
+    End Sub
+
+    Private Sub button4_Click(sender As Object, e As RoutedEventArgs)
+
+    End Sub
+End Class
