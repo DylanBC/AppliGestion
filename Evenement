@@ -1,1 +1,18 @@
 
+Class MainWindow
+
+
+
+
+    Private Sub button_Click_2(sender As Object, e As RoutedEventArgs) Handles button.Click
+        Acceuil_image.Visibility = Visibility.Hidden
+        Home.Content = New Qualite
+        Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub button1_Click(sender As Object, e As RoutedEventArgs) Handles button1.Click
+        Acceuil_image.Visibility = Visibility.Hidden
+        Home.Content = New Securite
+        Visibility = Visibility.Visible
+    End Sub
+End Class
