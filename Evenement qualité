@@ -1,0 +1,34 @@
+Class Qualite
+
+
+
+    Private Sub Operationnel_Click(sender As Object, e As RoutedEventArgs) Handles Operationnel.Click
+        Img_Client.Visibility = Visibility.Hidden
+        Operationnel.Visibility = Visibility.Hidden
+        Client.Visibility = Visibility.Hidden
+        Rectangle_Rouge.Visibility = Visibility.Hidden
+        Maitr_Ope.Visibility = Visibility.Hidden
+        Achat.Visibility = Visibility.Hidden
+        GérerRessourceHumaine.Visibility = Visibility.Hidden
+        Rectangle_Orange.Visibility = Visibility.Hidden
+        Maitrise_Ressource.Visibility = Visibility.Hidden
+        DirigeSociete.Visibility = Visibility.Hidden
+        Rectangle_Bleu.Visibility = Visibility.Hidden
+        TextMaitrise_Manag.Visibility = Visibility.Hidden
+        Qualite_Environnement.Visibility = Visibility.Hidden
+        Prevention.Visibility = Visibility.Hidden
+        Rectangle_Vert.Visibility = Visibility.Hidden
+        Text_AnalyseAmelioration.Visibility = Visibility.Hidden
+        Fleche.Visibility = Visibility.Hidden
+        Fleche1.Visibility = Visibility.Hidden
+        Fleche2.Visibility = Visibility.Hidden
+        Fleche3.Visibility = Visibility.Hidden
+        MoyenMaterielle.Visibility = Visibility.Hidden
+        RectangleHaut_Rouge.Visibility = Visibility.Hidden
+        TextRessourceExterieur.Visibility = Visibility.Hidden
+        GridMaitrise_Ope.Visibility = Visibility.Visible
+
+    End Sub
+
+
+End Class
