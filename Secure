@@ -7,7 +7,7 @@
       mc:Ignorable="d" 
       d:DesignHeight="300" d:DesignWidth="300"
       Title="Securite" Width="1280" Height="720">
-    <Grid>
-        <Image x:Name="Acceuil_image" Height="720" Margin="-40,-80,40,0" VerticalAlignment="Top" Source="Chantier.jpg" Width="1280"/>
+    <Grid Margin="10,0,0,10">
+        <Image x:Name="Image9_png" Margin="0,0,25,30" Source="Image9.png" Stretch="Fill"/>
     </Grid>
 </Page>
