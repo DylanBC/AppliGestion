@@ -3,32 +3,55 @@ Class Qualite
 
 
     Private Sub Operationnel_Click(sender As Object, e As RoutedEventArgs) Handles Operationnel.Click
-        Img_Client.Visibility = Visibility.Hidden
-        Operationnel.Visibility = Visibility.Hidden
-        Client.Visibility = Visibility.Hidden
-        Rectangle_Rouge.Visibility = Visibility.Hidden
-        Maitr_Ope.Visibility = Visibility.Hidden
-        Achat.Visibility = Visibility.Hidden
-        GérerRessourceHumaine.Visibility = Visibility.Hidden
-        Rectangle_Orange.Visibility = Visibility.Hidden
-        Maitrise_Ressource.Visibility = Visibility.Hidden
-        DirigeSociete.Visibility = Visibility.Hidden
-        Rectangle_Bleu.Visibility = Visibility.Hidden
-        TextMaitrise_Manag.Visibility = Visibility.Hidden
-        Qualite_Environnement.Visibility = Visibility.Hidden
-        Prevention.Visibility = Visibility.Hidden
-        Rectangle_Vert.Visibility = Visibility.Hidden
-        Text_AnalyseAmelioration.Visibility = Visibility.Hidden
-        Fleche.Visibility = Visibility.Hidden
-        Fleche1.Visibility = Visibility.Hidden
-        Fleche2.Visibility = Visibility.Hidden
-        Fleche3.Visibility = Visibility.Hidden
-        MoyenMaterielle.Visibility = Visibility.Hidden
-        RectangleHaut_Rouge.Visibility = Visibility.Hidden
-        TextRessourceExterieur.Visibility = Visibility.Hidden
+        Grid_Qualité.Visibility = Visibility.Hidden
+        GridMaitrise_Ope.Visibility = Visibility.Visible
+
+    End Sub
+    Private Sub Button_RepondreAff_Click(sender As Object, e As RoutedEventArgs) Handles Button_RepondreAff.Click
+        GridMaitrise_Ope.Visibility = Visibility.Hidden
+        Grid_RepondreAffaire.Visibility = Visibility.Visible
+
+
+    End Sub
+
+    Private Sub Bouton_Retour_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Retour.Click
+        Grid_DecisionEtude.Visibility = Visibility.Hidden
+        Grid_RepondreAffaire.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_DecisionEtude_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_DecisionEtude.Click
+        Grid_RepondreAffaire.Visibility = Visibility.Hidden
+        Grid_DecisionEtude.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_Retour2_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Retour2.Click
+        Grid_RepondreAffaire.Visibility = Visibility.Hidden
         GridMaitrise_Ope.Visibility = Visibility.Visible
 
     End Sub
 
+    Private Sub Bouton_FicheAlerte_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_FicheAlerte.Click
+        Process.Start("explorer.exe", "Q:\Dylan\Maitrise Opérationnel\Répondre à une affaire\Décision d'Etude\Documents disponibles\Fiche Alerte")
 
+    End Sub
+
+    Private Sub Bouton_FicheGoNoGo_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_FicheGoNoGo.Click
+        Process.Start("explorer.exe", "Q:\Dylan\Maitrise Opérationnel\Répondre à une affaire\Décision d'Etude\Documents disponibles\Fiche GO NO GO")
+    End Sub
+
+    Private Sub Bouton_NoteProcedure_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_NoteProcedure.Click
+        Process.Start("explorer.exe", "Q:\Dylan\Maitrise Opérationnel\Répondre à une affaire\Décision d'Etude\Documents disponibles\Note procédure CAR VEF")
+    End Sub
+
+    Private Sub Bouton_TableauAffaire_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_TableauAffaire.Click
+        Process.Start("explorer.exe", "Q:\Dylan\Maitrise Opérationnel\Répondre à une affaire\Décision d'Etude\Documents disponibles\Tableau des affaires")
+    End Sub
+
+    Private Sub Bouton_GuideAnalyse_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_GuideAnalyse.Click
+        Process.Start("explorer.exe", "Q:\Dylan\Maitrise Opérationnel\Répondre à une affaire\Décision d'Etude\Documents disponibles\Guide Analyse de risque")
+    End Sub
+
+    Private Sub Bouton_AFFA01_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_AFFA01.Click
+        Process.Start("explorer.exe", "Q:\Dylan\Maitrise Opérationnel\Répondre à une affaire\Décision d'Etude\Processus  applicable\AFFA 01")
+    End Sub
 End Class
