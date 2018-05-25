@@ -5,20 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ServeurQualités"
         mc:Ignorable="d"
-        Title="MainWindow" Height="720" Width="1280" Background="{x:Null}">
-    <Grid AllowDrop="True">
+        Title="MainWindow" Height="720" Width="1280" Background="White">
+    <Grid AllowDrop="True" Background="White">
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <Grid.Background>
-            <ImageBrush/>
-        </Grid.Background>
 
-        <Image x:Name="Acceuil_image" Height="799.5" Margin="-60,80.5,-87,-190" VerticalAlignment="Top" Source="AcceuilTunzini.JPG"/>
+        <Image x:Name="Acceuil_image" Height="425" Margin="130,150,122,0" VerticalAlignment="Top" Source="Image8.png"/>
 
-        <Frame x:Name="Home" Content="" Margin="0,86,0,-6" NavigationUIVisibility="Hidden" AllowDrop="False" IsHitTestVisible="True" Cursor="Arrow" UseLayoutRounding="True" FontSize="24" FontWeight="Bold">
+
+        <Frame x:Name="Home" Content="" Margin="0,86,0,0" NavigationUIVisibility="Hidden" AllowDrop="False" IsHitTestVisible="True" Cursor="Arrow" UseLayoutRounding="True" FontSize="24" FontWeight="Bold" Foreground="{x:Null}" Focusable="False" ClipToBounds="True">
             <Frame.Effect>
-                <DropShadowEffect/>
+                <DropShadowEffect Color="#FFDE1313" BlurRadius="50"/>
             </Frame.Effect>
         </Frame>
         <Image x:Name="Image4_png" Source="Image4.png" Stretch="Fill" Height="80.5" VerticalAlignment="Top"/>
@@ -27,9 +25,10 @@
         <Button x:Name="Bouton_Environnement" Content="Environnement" Height="50" Margin="551,14,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold" HorizontalAlignment="Left" Width="195" BorderBrush="{x:Null}" Background="{x:Null}" Foreground="White" Focusable="False" UseLayoutRounding="True" Cursor="Hand"/>
         <Button x:Name="Bouton_Formation" Content="Formation" Margin="1002,14,0,0" FontSize="24" FontWeight="Bold" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="195" BorderBrush="{x:Null}" Foreground="White" Background="{x:Null}" Focusable="False" HorizontalContentAlignment="Center" UseLayoutRounding="True" Cursor="Hand"/>
         <Button x:Name="Bouton_Habilitation" Content="Habilitation" Height="50" Margin="778,14,292,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold" HorizontalAlignment="Left" Width="195" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" Focusable="False" UseLayoutRounding="True" Cursor="Hand"/>
-
+        
 
 
     </Grid>
+    
 
 </Window>
