@@ -7,7 +7,7 @@ Class Qualite
         GridMaitrise_Ope.Visibility = Visibility.Visible
 
     End Sub
-    Private Sub Button_RepondreAff_Click(sender As Object, e As RoutedEventArgs) Handles Button_RepondreAff.Click
+    Private Sub Bouton_RepondreAff_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_RepondreAff.Click
         GridMaitrise_Ope.Visibility = Visibility.Hidden
         Grid_RepondreAffaire.Visibility = Visibility.Visible
 
@@ -31,27 +31,267 @@ Class Qualite
     End Sub
 
     Private Sub Bouton_FicheAlerte_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_FicheAlerte.Click
-        Process.Start("explorer.exe", "Q:\Dylan\Maitrise Opérationnel\Répondre à une affaire\Décision d'Etude\Documents disponibles\Fiche Alerte")
+        Process.Start("explorer.exe", "Q:\Processus Qualité\Maitrise Opérationnel\Répondre à une affaire\Décision d'Etude\Fiche Alerte")
 
     End Sub
 
     Private Sub Bouton_FicheGoNoGo_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_FicheGoNoGo.Click
-        Process.Start("explorer.exe", "Q:\Dylan\Maitrise Opérationnel\Répondre à une affaire\Décision d'Etude\Documents disponibles\Fiche GO NO GO")
+        Process.Start("explorer.exe", "Q:\Processus Qualité\Maitrise Opérationnel\Répondre à une affaire\Décision d'Etude\Fiche GO NO GO")
     End Sub
 
     Private Sub Bouton_NoteProcedure_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_NoteProcedure.Click
-        Process.Start("explorer.exe", "Q:\Dylan\Maitrise Opérationnel\Répondre à une affaire\Décision d'Etude\Documents disponibles\Note procédure CAR VEF")
+        Process.Start("explorer.exe", "Q:\Processus Qualité\Maitrise Opérationnel\Répondre à une affaire\Décision d'Etude\Note procédure CAR VEF")
     End Sub
 
     Private Sub Bouton_TableauAffaire_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_TableauAffaire.Click
-        Process.Start("explorer.exe", "Q:\Dylan\Maitrise Opérationnel\Répondre à une affaire\Décision d'Etude\Documents disponibles\Tableau des affaires")
+        Process.Start("explorer.exe", "Q:\Processus Qualité\Maitrise Opérationnel\Répondre à une affaire\Décision d'Etude\Tableau des affaires")
     End Sub
 
     Private Sub Bouton_GuideAnalyse_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_GuideAnalyse.Click
-        Process.Start("explorer.exe", "Q:\Dylan\Maitrise Opérationnel\Répondre à une affaire\Décision d'Etude\Documents disponibles\Guide Analyse de risque")
+        Process.Start("explorer.exe", "Q:\Processus Qualité\Maitrise Opérationnel\Répondre à une affaire\Décision d'Etude\Guide Analyse de risque")
     End Sub
 
-    Private Sub Bouton_AFFA01_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_AFFA01.Click
-        Process.Start("explorer.exe", "Q:\Dylan\Maitrise Opérationnel\Répondre à une affaire\Décision d'Etude\Processus  applicable\AFFA 01")
+
+    Private Sub Bouton_Retour3_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Retour3.Click
+        Grid_AffectationRessource.Visibility = Visibility.Hidden
+        Grid_RepondreAffaire.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_PlanningProjet_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_PlanningProjet.Click
+        Process.Start("explorer.exe", "Q:\Processus Qualité\Maitrise Opérationnel\Répondre à une affaire\Affectation d'une ressource\Planning du service projet")
+    End Sub
+
+
+
+    Private Sub Bouton_AffectationRessource_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_AffectationRessource.Click
+        Grid_RepondreAffaire.Visibility = Visibility.Hidden
+        Grid_AffectationRessource.Visibility = Visibility.Visible
+    End Sub
+
+
+
+    Private Sub Bouton_Retour4_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Retour4.Click
+        Grid_IdentificationExigence.Visibility = Visibility.Hidden
+        Grid_RepondreAffaire.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_IdentificationExigence_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_IdentificationExigence.Click
+        Grid_RepondreAffaire.Visibility = Visibility.Hidden
+        Grid_IdentificationExigence.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_Retour5_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Retour5.Click
+        Grid_ProgrammationComiteRisque.Visibility = Visibility.Hidden
+        Grid_RepondreAffaire.Visibility = Visibility.Visible
+
+
+    End Sub
+
+    Private Sub Bouton_ProgrammationCar_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_ProgrammationCar.Click
+        Grid_RepondreAffaire.Visibility = Visibility.Hidden
+        Grid_ProgrammationComiteRisque.Visibility = Visibility.Visible
+
+
+    End Sub
+
+    Private Sub Bouton_Retour6_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Retour6.Click
+        Grid_VisiteSite.Visibility = Visibility.Hidden
+        Grid_RepondreAffaire.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_VisiteSite_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_VisiteSite.Click
+        Grid_RepondreAffaire.Visibility = Visibility.Hidden
+        Grid_VisiteSite.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_CertificatVisiteType_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_CertificatVisiteType.Click
+        Process.Start("explorer.exe", "Q:\Processus Qualité\Maitrise Opérationnel\Répondre à une affaire\Visite du site\Certificat de visite type")
+    End Sub
+
+    Private Sub Bouton_Compte_renduVisiteSite_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Compte_renduVisiteSite.Click
+        Process.Start("explorer.exe", "Q:\Processus Qualité\Maitrise Opérationnel\Répondre à une affaire\Visite du site\Compte-rendu de visite de site")
+    End Sub
+
+    Private Sub Bouton_Retour7_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Retour7.Click
+        Grid_AnalyseFaisabilité.Visibility = Visibility.Hidden
+        Grid_RepondreAffaire.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_AnalyseFaisabilité_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_AnalyseFaisabilité.Click
+        Grid_RepondreAffaire.Visibility = Visibility.Hidden
+        Grid_AnalyseFaisabilité.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_Retour8_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Retour8.Click
+        Grid_EtudePlannning.Visibility = Visibility.Hidden
+        Grid_RepondreAffaire.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_EtudePlanning_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_EtudePlanning.Click
+        Grid_RepondreAffaire.Visibility = Visibility.Hidden
+        Grid_EtudePlannning.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_Retour9_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Retour9.Click
+        Grid_ConsultationFoEtST.Visibility = Visibility.Hidden
+        Grid_RepondreAffaire.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_ConsultationFoAMP_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_ConsultationFoAMP.Click
+        Grid_RepondreAffaire.Visibility = Visibility.Hidden
+        Grid_ConsultationFoEtST.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_Retour10_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Retour10.Click
+        Grid_RealisationMetre.Visibility = Visibility.Hidden
+        Grid_RepondreAffaire.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_RealisationMetre_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_RealisationMetre.Click
+        Grid_RepondreAffaire.Visibility = Visibility.Hidden
+        Grid_RealisationMetre.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_Retour11_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Retour11.Click
+        Grid_DevelopSolutionRetenue_Variante.Visibility = Visibility.Hidden
+        Grid_RepondreAffaire.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_DevelopSolution_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_DevelopSolution.Click
+        Grid_RepondreAffaire.Visibility = Visibility.Hidden
+        Grid_DevelopSolutionRetenue_Variante.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_Retour12_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Retour12.Click
+        Grid_RevueInterneConception_RC1.Visibility = Visibility.Hidden
+        Grid_RepondreAffaire.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_RevueInterneConception_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_RevueInterneConception.Click
+        Grid_RepondreAffaire.Visibility = Visibility.Hidden
+        Grid_RevueInterneConception_RC1.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_CompteRendu_TypeRC1_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_CompteRendu_TypeRC1.Click
+        Process.Start("Explorer.exe", "Q:\Processus Qualité\Maitrise Opérationnel\Répondre à une affaire\Revue interne de conception(RC1)\Compte rendu type RC1")
+    End Sub
+
+    Private Sub Bouton_Retour13_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Retour13.Click
+        Grid_RedactionOffre.Visibility = Visibility.Hidden
+        Grid_RepondreAffaire.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_RetourOrign_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_RetourOrign.Click
+        GridMaitrise_Ope.Visibility = Visibility.Hidden
+        Grid_Qualité.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_RedactionOffre_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_RedactionOffre.Click
+        Grid_RepondreAffaire.Visibility = Visibility.Hidden
+        Grid_RedactionOffre.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_Retour14_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Retour14.Click
+        Grid_BouclageOffre.Visibility = Visibility.Hidden
+        Grid_RepondreAffaire.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_BouclageOffre_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_BouclageOffre.Click
+        Grid_RepondreAffaire.Visibility = Visibility.Hidden
+        Grid_BouclageOffre.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_Retour15_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Retour15.Click
+        Grid_RevueContratRC2.Visibility = Visibility.Hidden
+        Grid_RepondreAffaire.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_CompteRenduType_RC2_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_CompteRenduType_RC2.Click
+        Process.Start("explorer.exe", "Q:\Processus Qualité\Maitrise Opérationnel\Répondre à une affaire\Revue de contrat RC2\Compte rendu type RC2")
+    End Sub
+
+    Private Sub Bouton_RevueContratRC2_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_RevueContratRC2.Click
+        Grid_RepondreAffaire.Visibility = Visibility.Hidden
+        Grid_RevueContratRC2.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_Retour16_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Retour16.Click
+        Grid_PresentationOffre.Visibility = Visibility.Hidden
+        Grid_RepondreAffaire.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_PresentationOffre_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_PresentationOffre.Click
+        Grid_RepondreAffaire.Visibility = Visibility.Hidden
+        Grid_PresentationOffre.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_Retour17_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Retour17.Click
+        Grid_ComparerOffreCommande.Visibility = Visibility.Hidden
+        Grid_RepondreAffaire.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_ComparerOffreDemande_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_ComparerOffreDemande.Click
+        Grid_RepondreAffaire.Visibility = Visibility.Hidden
+        Grid_ComparerOffreCommande.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_Retour18_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Retour18.Click
+        Grid_RevueTransfert_RC3.Visibility = Visibility.Hidden
+        Grid_RepondreAffaire.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_CompteRenduType_RC3_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_CompteRenduType_RC3.Click
+        Process.Start("explorer.exe", "Q:\Processus Qualité\Maitrise Opérationnel\Répondre à une affaire\Revue de transfert RC3\Compte Rendue type RC3")
+    End Sub
+
+    Private Sub Bouton_RevueTransfert_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_RevueTransfert.Click
+        Grid_RepondreAffaire.Visibility = Visibility.Hidden
+        Grid_RevueTransfert_RC3.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_RevueTechniqueBEP_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_RevueTechniqueBEP.Click
+        GridMaitrise_Ope.Visibility = Visibility.Hidden
+        Grid_RevueTechniqueInterneBEP.Visibility = Visibility.Visible
+
+
+    End Sub
+
+    Private Sub Bouton_RevueContratRC1_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_RevueContratRC1.Click
+        GridMaitrise_Ope.Visibility = Visibility.Hidden
+        Grid_RevueContratBouclage_EnvoieOffre.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_Retour19_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Retour19.Click
+        Grid_RealiserChantier.Visibility = Visibility.Hidden
+        GridMaitrise_Ope.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_RealiseChantier_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_RealiseChantier.Click
+        GridMaitrise_Ope.Visibility = Visibility.Hidden
+        Grid_RealiserChantier.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_Retour20_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Retour20.Click
+        Grid_RevueTechniqueInterneBEP.Visibility = Visibility.Hidden
+        GridMaitrise_Ope.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_Retour21_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Retour21.Click
+        Grid_RevueContratBouclage_EnvoieOffre.Visibility = Visibility.Hidden
+        GridMaitrise_Ope.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_RechercheAff_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_RechercheAff.Click
+        GridMaitrise_Ope.Visibility = Visibility.Hidden
+        Grid_RechercherAff.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_Retour22_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Retour22.Click
+        Grid_RechercherAff.Visibility = Visibility.Hidden
+        GridMaitrise_Ope.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_DocTypeAnalyseExigence_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_DocTypeAnalyseExigence.Click
+        Process.Start("explorer.exe", "Q:\Processus Qualité\Maitrise Opérationnel\Répondre à une affaire\Identification des exigences\Document type d'analyse des exigences")
     End Sub
 End Class
