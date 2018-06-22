@@ -3,16 +3,19 @@ Class MainWindow
 
 
 
-    Private Sub button_Click_2(sender As Object, e As RoutedEventArgs) Handles button.Click
+    Private Sub Bouton_Qualite_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Qualite.Click
         Acceuil_image.Visibility = Visibility.Hidden
         Home.Content = New Qualite
         Visibility = Visibility.Visible
+
+
     End Sub
 
     Private Sub button1_Click(sender As Object, e As RoutedEventArgs) Handles button1.Click
         Acceuil_image.Visibility = Visibility.Hidden
         Home.Content = New Securite
         Visibility = Visibility.Visible
+
     End Sub
 
     Private Sub Bouton_Formation_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Formation.Click
@@ -20,17 +23,24 @@ Class MainWindow
         Home.Content = New Formation
         Visibility = Visibility.Visible
 
+
     End Sub
 
     Private Sub Bouton_Environnement_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Environnement.Click
         Acceuil_image.Visibility = Visibility.Hidden
         Home.Content = New Environnement
         Visibility = Visibility.Visible
+
     End Sub
 
     Private Sub Bouton_Habilitation_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Habilitation.Click
         Acceuil_image.Visibility = Visibility.Hidden
         Home.Content = New Habilitation
         Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Window_Activated(sender As Object, e As EventArgs)
+        WindowState = WindowState.Maximized
+
     End Sub
 End Class
