@@ -639,7 +639,8 @@ Class Qualite
     End Sub
 
     Private Sub Bouton_GestionEnvoie_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_GestionEnvoie.Click
-        Process.Start("explorer.exe", "Q:\Processus Qualité\Maitrise Opérationnel\Etude d'exécution\Note de Calculs\Analyse Fonctionnelle\Gestion des envoies")
+        Grid_Electrique.Visibility = Visibility.Hidden
+        Grid_GestionEnvoie.Visibility = Visibility.Visible
     End Sub
 
     Private Sub Bouton_AnalyseFonctionnelle_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_AnalyseFonctionnelle.Click
@@ -658,24 +659,18 @@ Class Qualite
     End Sub
 
     Private Sub Bouton_Retour48_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Retour48.Click
-        Grid_SchematiqueAerau.Visibility = Visibility.Hidden
+        Grid_AerauTerminauxAerau.Visibility = Visibility.Hidden
         Grid_Schematique.Visibility = Visibility.Visible
     End Sub
-
-    Private Sub Bouton_SchematiqueAerau_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_SchematiqueAerau.Click
-        Grid_Schematique.Visibility = Visibility.Hidden
-        Grid_SchematiqueAerau.Visibility = Visibility.Visible
-    End Sub
-
     Private Sub Bouton_Retour49_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Retour49.Click
-        Grid_SchematiqueHydrau.Visibility = Visibility.Hidden
+        Grid_HydrauTerminauxHydrau.Visibility = Visibility.Hidden
         Grid_Schematique.Visibility = Visibility.Visible
 
     End Sub
 
-    Private Sub Bouton_SchematiqueHydrau_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_SchematiqueHydrau.Click
+    Private Sub Bouton_Hydrau_TerminauxHydrau_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Hydrau_TerminauxHydrau.Click
         Grid_Schematique.Visibility = Visibility.Hidden
-        Grid_SchematiqueHydrau.Visibility = Visibility.Visible
+        Grid_HydrauTerminauxHydrau.Visibility = Visibility.Visible
     End Sub
 
     Private Sub Bouton_Retour50_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Retour50.Click
@@ -690,11 +685,11 @@ Class Qualite
 
     Private Sub Bouton__SchematiqueDesemfumage_Click(sender As Object, e As RoutedEventArgs) Handles Bouton__SchematiqueDesemfumage.Click
         Grid_Schematique.Visibility = Visibility.Hidden
-        Grid_Bouton__SchematiqueDesemfumage.Visibility = Visibility.Visible
+        Grid_SchematiqueDesemfumage.Visibility = Visibility.Visible
     End Sub
 
     Private Sub Bouton_Retour51_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Retour51.Click
-        Grid_Bouton__SchematiqueDesemfumage.Visibility = Visibility.Hidden
+        Grid_SchematiqueDesemfumage.Visibility = Visibility.Hidden
         Grid_Schematique.Visibility = Visibility.Visible
     End Sub
 
@@ -916,5 +911,535 @@ Class Qualite
     Private Sub Bouton_EtablirDOE_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_EtablirDOE.Click
         Grid_RealiserChantier.Visibility = Visibility.Hidden
         Grid_EtablirDOE.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_Retour74_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Retour74.Click
+        Grid_GestionEnvoie.Visibility = Visibility.Hidden
+        Grid_Electrique.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_Retour75_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Retour75.Click
+        Grid_Electrique.Visibility = Visibility.Hidden
+        Grid_NoteCalcul.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_Electrique_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Electrique.Click
+        Grid_NoteCalcul.Visibility = Visibility.Hidden
+        Grid_Electrique.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_Retour76_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Retour76.Click
+        Grid_GestionVisa.Visibility = Visibility.Hidden
+        Grid_Electrique.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_GestionVisa_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_GestionVisa.Click
+        Grid_Electrique.Visibility = Visibility.Hidden
+        Grid_GestionVisa.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_RC4a_AnalyseFonct_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_RC4a_AnalyseFonct.Click
+        Grid_AnalyseFonctionnel.Visibility = Visibility.Hidden
+        Grid_RC4a_AnalyseFonct.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_Retour73_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Retour73.Click
+        Grid_RC4a_AnalyseFonct.Visibility = Visibility.Hidden
+        Grid_AnalyseFonctionnel.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_Aerau_TerminauxAerau_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Aerau_TerminauxAerau.Click
+        Grid_Schematique.Visibility = Visibility.Hidden
+        Grid_AerauTerminauxAerau.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_Retour77_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Retour77.Click
+        Grid_FicheTechMateriel.Visibility = Visibility.Hidden
+        Grid_EtudeExecution.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_FicheTechniqueMateriel_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_FicheTechniqueMateriel.Click
+        Grid_EtudeExecution.Visibility = Visibility.Hidden
+        Grid_FicheTechMateriel.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_Retour78_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Retour78.Click
+        Grid_FicheTechMateriel_GestionVisa.Visibility = Visibility.Hidden
+        Grid_FicheTechMateriel.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_FicheTechMateriel_GestionVisa_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_FicheTechMateriel_GestionVisa.Click
+        Grid_FicheTechMateriel.Visibility = Visibility.Hidden
+        Grid_FicheTechMateriel_GestionVisa.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_Retour79_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Retour79.Click
+        Grid_FicheTechMateriel_GestionEnvoi.Visibility = Visibility.Hidden
+        Grid_FicheTechMateriel.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_FicheTechMateriel_GestionEnvoie_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_FicheTechMateriel_GestionEnvoie.Click
+        Grid_FicheTechMateriel.Visibility = Visibility.Hidden
+        Grid_FicheTechMateriel_GestionEnvoi.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_Retour80_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Retour80.Click
+        Grid_EtudeGraphique.Visibility = Visibility.Hidden
+        Grid_EtudeExecution.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_EtudeGraphique_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_EtudeGraphique.Click
+        Grid_EtudeExecution.Visibility = Visibility.Hidden
+        Grid_EtudeGraphique.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_Retour81_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Retour81.Click
+        Grid_EtudeGraphique2D.Visibility = Visibility.Hidden
+        Grid_EtudeGraphique.Visibility = Visibility.Visible
+
+    End Sub
+
+    Private Sub Bouton_EtudeGraphique2D_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_EtudeGraphique2D.Click
+        Grid_EtudeGraphique.Visibility = Visibility.Hidden
+        Grid_EtudeGraphique2D.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_Retour82_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Retour82.Click
+        Grid_PhaseAvantSyntheseReseau2D.Visibility = Visibility.Hidden
+        Grid_EtudeGraphique2D.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_PhaseAvantSyntheseReseau_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_PhaseAvantSyntheseReseau2D.Click
+        Grid_EtudeGraphique2D.Visibility = Visibility.Hidden
+        Grid_PhaseAvantSyntheseReseau2D.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_Retour83_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Retour83.Click
+        Grid_GestionEnvoie_PhaseAvantSyntheseReseau2D.Visibility = Visibility.Hidden
+        Grid_PhaseAvantSyntheseReseau2D.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_GestionEnvoie_PhaseAvantSyntheseReseau_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_GestionEnvoie_PhaseAvantSyntheseReseau2D.Click
+        Grid_PhaseAvantSyntheseReseau2D.Visibility = Visibility.Hidden
+        Grid_GestionEnvoie_PhaseAvantSyntheseReseau2D.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_Retour84_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Retour84.Click
+        Grid_GestionVisa_PhaseAvantSyntheseReseau2D.Visibility = Visibility.Hidden
+        Grid_PhaseAvantSyntheseReseau2D.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_GestionVisa_PhaseAvantSyntheseReseau_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_GestionVisa_PhaseAvantSyntheseReseau2D.Click
+        Grid_PhaseAvantSyntheseReseau2D.Visibility = Visibility.Hidden
+        Grid_GestionVisa_PhaseAvantSyntheseReseau2D.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_Retour85_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Retour85.Click
+        Grid_PhaseAvantSyntheseReservation2D.Visibility = Visibility.Hidden
+        Grid_EtudeGraphique2D.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_PhaseAvantSyntheseReserv2D_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_PhaseAvantSyntheseReserv2D.Click
+        Grid_EtudeGraphique2D.Visibility = Visibility.Hidden
+        Grid_PhaseAvantSyntheseReservation2D.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_Retour86_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Retour86.Click
+        Grid_GestionEnvoi_PhaseAvantSyntheseReservation2D.Visibility = Visibility.Hidden
+        Grid_PhaseAvantSyntheseReservation2D.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_GestionEnvoi_PhaseAvantSyntheseReservation2D_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_GestionEnvoi_PhaseAvantSyntheseReservation2D.Click
+        Grid_PhaseAvantSyntheseReservation2D.Visibility = Visibility.Hidden
+        Grid_GestionEnvoi_PhaseAvantSyntheseReservation2D.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_Retour87_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Retour87.Click
+        Grid_GestionVisa_PhaseAvantSyntheseReservation2D.Visibility = Visibility.Hidden
+        Grid_PhaseAvantSyntheseReservation2D.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_GestionVisa_PhaseAvantSyntheseReservation2D_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_GestionVisa_PhaseAvantSyntheseReservation2D.Click
+        Grid_PhaseAvantSyntheseReservation2D.Visibility = Visibility.Hidden
+        Grid_GestionVisa_PhaseAvantSyntheseReservation2D.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_Retour88_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Retour88.Click
+        Grid_DocReferenceSynthese2D.Visibility = Visibility.Hidden
+        Grid_EtudeGraphique2D.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_DocReferenceSynthese2D_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_DocReferenceSynthese2D.Click
+        Grid_EtudeGraphique2D.Visibility = Visibility.Hidden
+        Grid_DocReferenceSynthese2D.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_Retour89_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Retour89.Click
+        Grid_PhasePlanExecutionOuvrage2D.Visibility = Visibility.Hidden
+        Grid_EtudeGraphique2D.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_PhasePlanExecutionOuvrage2D_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_PhasePlanExecutionOuvrage2D.Click
+        Grid_EtudeGraphique2D.Visibility = Visibility.Hidden
+        Grid_PhasePlanExecutionOuvrage2D.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_Retour90_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Retour90.Click
+        Grid_GestionEnvoi_PhasePlanExecutionOuvrage2D.Visibility = Visibility.Hidden
+        Grid_PhasePlanExecutionOuvrage2D.Visibility = Visibility.Visible
+
+    End Sub
+
+    Private Sub Bouton_GestionEnvoi_PhasePlanExecutionOuvrage2D_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_GestionEnvoi_PhasePlanExecutionOuvrage2D.Click
+        Grid_PhasePlanExecutionOuvrage2D.Visibility = Visibility.Hidden
+        Grid_GestionEnvoi_PhasePlanExecutionOuvrage2D.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_Retour91_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Retour91.Click
+        Grid_GestionVisa_PhasePlanExecutionOuvrage2D.Visibility = Visibility.Hidden
+        Grid_PhasePlanExecutionOuvrage2D.Visibility = Visibility.Visible
+
+    End Sub
+
+    Private Sub Bouton_GestionVisa_PhasePlanExecutionOuvrage2D_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_GestionVisa_PhasePlanExecutionOuvrage2D.Click
+        Grid_PhasePlanExecutionOuvrage2D.Visibility = Visibility.Hidden
+        Grid_GestionVisa_PhasePlanExecutionOuvrage2D.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_Retour92_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Retour92.Click
+        Grid_RevueConception4c_PhasePlanExecutionOuvrage2D.Visibility = Visibility.Hidden
+        Grid_PhasePlanExecutionOuvrage2D.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_RevueConception4c_PhasePlanExecutionOuvrage2D_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_RevueConception4c_PhasePlanExecutionOuvrage2D.Click
+        Grid_PhasePlanExecutionOuvrage2D.Visibility = Visibility.Hidden
+        Grid_RevueConception4c_PhasePlanExecutionOuvrage2D.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_Retour93_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Retour93.Click
+        Grid_PhasePlanExecution2D.Visibility = Visibility.Hidden
+        Grid_EtudeGraphique2D.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_PhasePlanExecution2D_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_PhasePlanExecution2D.Click
+        Grid_EtudeGraphique2D.Visibility = Visibility.Hidden
+        Grid_PhasePlanExecution2D.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_TrameConventionGroupement_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_TrameConventionGroupement.Click
+        Process.Start("explorer.exe", "Q:\Processus Qualité\Maitrise Opérationnel\Répondre à une affaire\Programmation CAR\Trame de conventions de groupement")
+    End Sub
+
+    Private Sub Bouton_TableauDivergenceOffreMarche_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_TableauDivergenceOffreMarche.Click
+        Process.Start("explorer.exe", "Q:\Processus Qualité\Maitrise Opérationnel\Répondre à une affaire\Comparer les éléments de l'offre et de la commande\Tableau des divergences offre marché")
+    End Sub
+
+    Private Sub Bouton_OrdreJour_RevueTransfert_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_OrdreJour_RevueTransfert.Click
+        Process.Start("explorer.exe", "Q:\Processus Qualité\Maitrise Opérationnel\Répondre à une affaire\Revue de transfert RC3\Ordre du jour Revue de Transfert")
+    End Sub
+
+    Private Sub Bouton_Retour94_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Retour94.Click
+        Grid_GestionEnvoi_PhasePlanExecution2D.Visibility = Visibility.Hidden
+        Grid_PhasePlanExecution2D.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_GestionEnvoi_PhasePlanExecution2D_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_GestionEnvoi_PhasePlanExecution2D.Click
+        Grid_PhasePlanExecution2D.Visibility = Visibility.Hidden
+        Grid_GestionEnvoi_PhasePlanExecution2D.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_Retour95_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Retour95.Click
+        Grid_GestionVisa_PhasePlanExecution2D.Visibility = Visibility.Hidden
+        Grid_PhasePlanExecution2D.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_GestionVisa_PhasePlanExecution2D_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_GestionVisa_PhasePlanExecution2D.Click
+        Grid_PhasePlanExecution2D.Visibility = Visibility.Hidden
+        Grid_GestionVisa_PhasePlanExecution2D.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_Retour96_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Retour96.Click
+        Grid_EtudeGraphique3D.Visibility = Visibility.Hidden
+        Grid_EtudeGraphique.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_EtudeGraphique3D_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_EtudeGraphique3D.Click
+        Grid_EtudeGraphique.Visibility = Visibility.Hidden
+        Grid_EtudeGraphique3D.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_Retour97_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Retour97.Click
+        Grid_PhaseAvantSyntheseReseau3D.Visibility = Visibility.Hidden
+        Grid_EtudeGraphique3D.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_PhaseAvantSyntheseReseau3D_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_PhaseAvantSyntheseReseau3D.Click
+        Grid_EtudeGraphique3D.Visibility = Visibility.Hidden
+        Grid_PhaseAvantSyntheseReseau3D.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_Retour98_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Retour98.Click
+        Grid_ModeleReseau3D.Visibility = Visibility.Hidden
+        Grid_PhaseAvantSyntheseReseau3D.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_ModeleReseau3D_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_ModeleReseau3D.Click
+        Grid_PhaseAvantSyntheseReseau3D.Visibility = Visibility.Hidden
+        Grid_ModeleReseau3D.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_Retour99_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Retour99.Click
+        Grid_PhaseAvantSyntheseReservation3D.Visibility = Visibility.Hidden
+        Grid_EtudeGraphique3D.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_PhaseAvantSyntheseReservation3D_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_PhaseAvantSyntheseReservation3D.Click
+        Grid_EtudeGraphique3D.Visibility = Visibility.Hidden
+        Grid_PhaseAvantSyntheseReservation3D.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_Retour100_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Retour100.Click
+        Grid_ModeleReservation3D.Visibility = Visibility.Hidden
+        Grid_PhaseAvantSyntheseReservation3D.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_ModeleReservation3D_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_ModeleReservation3D.Click
+        Grid_PhaseAvantSyntheseReservation3D.Visibility = Visibility.Hidden
+        Grid_ModeleReservation3D.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_Retour101_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Retour101.Click
+        Grid_GestionEnvoi_ModeleReservation3D.Visibility = Visibility.Hidden
+        Grid_ModeleReservation3D.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_GestionEnvoi_ModeleReservation3D_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_GestionEnvoi_ModeleReservation3D.Click
+        Grid_ModeleReservation3D.Visibility = Visibility.Hidden
+        Grid_GestionEnvoi_ModeleReservation3D.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_Retour102_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Retour102.Click
+        Grid_GestionVisa_ModeleReservation3D.Visibility = Visibility.Hidden
+        Grid_ModeleReservation3D.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_GestionVisa_ModeleReservation3D_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_GestionVisa_ModeleReservation3D.Click
+        Grid_ModeleReservation3D.Visibility = Visibility.Hidden
+        Grid_GestionVisa_ModeleReservation3D.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_Retour103_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Retour103.Click
+        Grid_MaquetteReferenceSynthese3D.Visibility = Visibility.Hidden
+        Grid_EtudeGraphique3D.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_MaquetteReferenceSynthese3D_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_MaquetteReferenceSynthese3D.Click
+        Grid_EtudeGraphique3D.Visibility = Visibility.Hidden
+        Grid_MaquetteReferenceSynthese3D.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_Retour104_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Retour104.Click
+        Grid_PhasePlanExecutionOuvrage3D.Visibility = Visibility.Hidden
+        Grid_EtudeGraphique3D.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_PhasePlanExecutionOuvrage3D_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_PhasePlanExecutionOuvrage3D.Click
+        Grid_EtudeGraphique3D.Visibility = Visibility.Hidden
+        Grid_PhasePlanExecutionOuvrage3D.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_Retour105_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Retour105.Click
+        Grid_PEO_PhasePlanExecutionOuvrage3D.Visibility = Visibility.Hidden
+        Grid_PhasePlanExecutionOuvrage3D.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_PEO_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_PEO.Click
+        Grid_PhasePlanExecutionOuvrage3D.Visibility = Visibility.Hidden
+        Grid_PEO_PhasePlanExecutionOuvrage3D.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_Retour106_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Retour106.Click
+        Grid_RevueConception4c_PEO3D.Visibility = Visibility.Hidden
+        Grid_PEO_PhasePlanExecutionOuvrage3D.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_RevueConcept4c_PEO3D_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_RevueConcept4c_PEO3D.Click
+        Grid_PEO_PhasePlanExecutionOuvrage3D.Visibility = Visibility.Hidden
+        Grid_RevueConception4c_PEO3D.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_Retour107_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Retour107.Click
+        Grid_GestionEnvoi_PEO3D.Visibility = Visibility.Hidden
+        Grid_PEO_PhasePlanExecutionOuvrage3D.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_GestionEnvoi_PEO3D_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_GestionEnvoi_PEO3D.Click
+        Grid_PEO_PhasePlanExecutionOuvrage3D.Visibility = Visibility.Hidden
+        Grid_GestionEnvoi_PEO3D.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_Retour108_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Retour108.Click
+        Grid_GestionVisa_PEO3D.Visibility = Visibility.Hidden
+        Grid_PEO_PhasePlanExecutionOuvrage3D.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_GestionVisa_PEO3D_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_GestionVisa_PEO3D.Click
+        Grid_PEO_PhasePlanExecutionOuvrage3D.Visibility = Visibility.Hidden
+        Grid_GestionVisa_PEO3D.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_Retour109_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Retour109.Click
+        Grid_PhasePlanExecution3D.Visibility = Visibility.Hidden
+        Grid_EtudeGraphique3D.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_EXE_PhasePlanExecution3D_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_EXE_PhasePlanExecution3D.Click
+        Grid_PhasePlanExecution3D.Visibility = Visibility.Hidden
+        Grid_Exe_PhasePlanExecution3D.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_PhasePlanExecution3D_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_PhasePlanExecution3D.Click
+        Grid_EtudeGraphique3D.Visibility = Visibility.Hidden
+        Grid_PhasePlanExecution3D.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_Retour110_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Retour110.Click
+        Grid_Exe_PhasePlanExecution3D.Visibility = Visibility.Hidden
+        Grid_PhasePlanExecution3D.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_GestionEnvoi_Exe3D_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_GestionEnvoi_Exe3D.Click
+        Grid_Exe_PhasePlanExecution3D.Visibility = Visibility.Hidden
+        Grid_GestionEnvoi_Exe3D.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_Retour111_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Retour111.Click
+        Grid_GestionEnvoi_Exe3D.Visibility = Visibility.Hidden
+        Grid_Exe_PhasePlanExecution3D.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_Retour112_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Retour112.Click
+        Grid_GestionVisa_Exe3D.Visibility = Visibility.Hidden
+        Grid_Exe_PhasePlanExecution3D.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_GestionVisa_Exe3D_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_GestionVisa_Exe3D.Click
+        Grid_Exe_PhasePlanExecution3D.Visibility = Visibility.Hidden
+        Grid_GestionVisa_Exe3D.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_Retour113_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Retour113.Click
+        Grid_BPE.Visibility = Visibility.Hidden
+        Grid_EtudeExecution.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_BPE_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_BPE.Click
+        Grid_EtudeExecution.Visibility = Visibility.Hidden
+        Grid_BPE.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_Retour72_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Retour72.Click
+        Grid_CasModifProjet.Visibility = Visibility.Hidden
+        Grid_EtudeExecution.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_CasModifProjet_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_CasModifProjet.Click
+        Grid_EtudeExecution.Visibility = Visibility.Hidden
+        Grid_CasModifProjet.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_RevueConception4B_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_RevueConception4B.Click
+        Grid_CasModifProjet.Visibility = Visibility.Hidden
+        Grid_RevueConception4B.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_Retour114_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Retour114.Click
+        Grid_RevueConception4B.Visibility = Visibility.Hidden
+        Grid_CasModifProjet.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_Retour115_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Retour115.Click
+        Grid_RevueSchemaAF.Visibility = Visibility.Hidden
+        GridMaitrise_Ope.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_RevueSchemaAF_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_RevueSchemaAF.Click
+        GridMaitrise_Ope.Visibility = Visibility.Hidden
+        Grid_RevueSchemaAF.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_Retour116_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Retour116.Click
+        Grid_RevueDesModif.Visibility = Visibility.Hidden
+        GridMaitrise_Ope.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_RevueModifRC4b_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_RevueModifRC4b.Click
+        GridMaitrise_Ope.Visibility = Visibility.Hidden
+        Grid_RevueDesModif.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_Retour117_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Retour117.Click
+        Grid_RevueEtudeAvancement.Visibility = Visibility.Hidden
+        GridMaitrise_Ope.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_RevueEtudeAvancement70_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_RevueEtudeAvancement70.Click
+        GridMaitrise_Ope.Visibility = Visibility.Hidden
+        Grid_RevueEtudeAvancement.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_Retour118_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Retour118.Click
+        Grid_ReunionOrganisationChantierRC5.Visibility = Visibility.Hidden
+        GridMaitrise_Ope.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_ReunionOrganiChantier_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_ReunionOrganiChantier.Click
+        GridMaitrise_Ope.Visibility = Visibility.Hidden
+        Grid_ReunionOrganisationChantierRC5.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_ReunionOrganiChantierRC5_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_ReunionOrganiChantierRC5.Click
+        GridMaitrise_Ope.Visibility = Visibility.Hidden
+        Grid_ReunionOrganisationChantierRC5.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_Retour119_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Retour119.Click
+        Grid_Revue70TravauxRC6.Visibility = Visibility.Hidden
+        GridMaitrise_Ope.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_Revue70TravauxRC6_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Revue70TravauxRC6.Click
+        GridMaitrise_Ope.Visibility = Visibility.Hidden
+        Grid_Revue70TravauxRC6.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_Retour120_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Retour120.Click
+        Grid_ReunionLancementMES_MAP_RC7.Visibility = Visibility.Hidden
+        GridMaitrise_Ope.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_ReunionLancementMESMAP_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_ReunionLancementMESMAP.Click
+        GridMaitrise_Ope.Visibility = Visibility.Hidden
+        Grid_ReunionLancementMES_MAP_RC7.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_ReunionLancementMESMAP_RC7_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_ReunionLancementMESMAP_RC7.Click
+        GridMaitrise_Ope.Visibility = Visibility.Hidden
+        Grid_ReunionLancementMES_MAP_RC7.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_Retour121_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Retour121.Click
+        Grid_RetourExperienceRC8.Visibility = Visibility.Hidden
+        GridMaitrise_Ope.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_RetourExperience_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_RetourExperience.Click
+        GridMaitrise_Ope.Visibility = Visibility.Hidden
+        Grid_RetourExperienceRC8.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_RetourExperience_RC8_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_RetourExperience_RC8.Click
+        GridMaitrise_Ope.Visibility = Visibility.Hidden
+        Grid_RetourExperienceRC8.Visibility = Visibility.Visible
     End Sub
 End Class
