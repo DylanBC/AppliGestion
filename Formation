@@ -8,7 +8,7 @@
       d:DesignHeight="300" d:DesignWidth="300"
       Title="Formation" Width="1280" Height="720">
     <Grid>
-        <Image x:Name="Image7_png" Margin="-235.048,-125,-295,-100" Source="Image7.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5" OpacityMask="White" Height="945" VerticalAlignment="Bottom">
+        <Image x:Name="Image7_png" Margin="-330.036,-120,-349.94,-120" Source="Image7.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5" OpacityMask="White" Height="960" VerticalAlignment="Bottom">
             <Image.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
