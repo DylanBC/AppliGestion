@@ -5,30 +5,34 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ServeurQualités"
         mc:Ignorable="d"
-        Title="MainWindow" Height="720" Width="1280" Background="White">
-    <Grid AllowDrop="True" Background="White">
+        Title="Tunzini Serveur Qualité" Height="720" Width="1280" Activated="Window_Activated">
+ 
+    <Grid AllowDrop="True">
+        <Grid.Background>
+            <ImageBrush ImageSource="Image49.png"/>
+        </Grid.Background>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
 
-        <Image x:Name="Acceuil_image" Height="425" Margin="130,150,122,0" VerticalAlignment="Top" Source="Image8.png"/>
+        <Image x:Name="Acceuil_image" Height="465" Margin="120,215,162,0" VerticalAlignment="Top" Source="Esprit TUNZINI.PNG"/>
 
 
-        <Frame x:Name="Home" Content="" Margin="0,86,0,0" NavigationUIVisibility="Hidden" AllowDrop="False" IsHitTestVisible="True" Cursor="Arrow" UseLayoutRounding="True" FontSize="24" FontWeight="Bold" Foreground="{x:Null}" Focusable="False" ClipToBounds="True">
+        <Frame x:Name="Home" Content="" Margin="0,80,0,0" NavigationUIVisibility="Hidden" AllowDrop="False" IsHitTestVisible="True" Cursor="Arrow" UseLayoutRounding="True" FontSize="24" FontWeight="Bold" Foreground="{x:Null}" Focusable="False" ClipToBounds="True">
             <Frame.Effect>
-                <DropShadowEffect Color="#FFDE1313" BlurRadius="50"/>
+                <DropShadowEffect Color="#FF13C2DE" BlurRadius="50"/>
             </Frame.Effect>
         </Frame>
         <Image x:Name="Image4_png" Source="Image4.png" Stretch="Fill" Height="80.5" VerticalAlignment="Top"/>
-        <Button x:Name="button" Content="Qualité" HorizontalAlignment="Left" Height="50" Margin="90,14,0,0" VerticalAlignment="Top" Width="195" FontSize="24" FontWeight="Bold" Background="{x:Null}" Foreground="White" Focusable="False" IsHitTestVisible="True" Cursor="Hand" AllowDrop="False" IsTabStop="False" BorderBrush="{x:Null}" UseLayoutRounding="True"/>
+        <Button x:Name="Bouton_Qualite" Content="Qualité" HorizontalAlignment="Left" Height="50" Margin="90,14,0,0" VerticalAlignment="Top" Width="195" FontSize="24" FontWeight="Bold" Background="{x:Null}" Foreground="White" Focusable="False" IsHitTestVisible="True" Cursor="Hand" AllowDrop="False" IsTabStop="False" BorderBrush="{x:Null}" UseLayoutRounding="True"/>
         <Button x:Name="button1" Content="Sécurité" Height="50" Margin="320,14,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold" Background="{x:Null}" Foreground="White" Padding="1" BorderBrush="{x:Null}" Focusable="False" Cursor="Hand" HorizontalAlignment="Left" Width="195" UseLayoutRounding="True" d:LayoutOverrides="HorizontalAlignment"/>
         <Button x:Name="Bouton_Environnement" Content="Environnement" Height="50" Margin="551,14,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold" HorizontalAlignment="Left" Width="195" BorderBrush="{x:Null}" Background="{x:Null}" Foreground="White" Focusable="False" UseLayoutRounding="True" Cursor="Hand"/>
         <Button x:Name="Bouton_Formation" Content="Formation" Margin="1002,14,0,0" FontSize="24" FontWeight="Bold" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="195" BorderBrush="{x:Null}" Foreground="White" Background="{x:Null}" Focusable="False" HorizontalContentAlignment="Center" UseLayoutRounding="True" Cursor="Hand"/>
         <Button x:Name="Bouton_Habilitation" Content="Habilitation" Height="50" Margin="778,14,292,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold" HorizontalAlignment="Left" Width="195" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" Focusable="False" UseLayoutRounding="True" Cursor="Hand"/>
-        
+
 
 
     </Grid>
-    
+
 
 </Window>
