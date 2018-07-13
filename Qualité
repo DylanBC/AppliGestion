@@ -12,10 +12,10 @@
         <Grid.Background>
             <ImageBrush/>
         </Grid.Background>
-        <Grid x:Name="Grid_Qualité" AllowDrop="True"   >
+        <Grid x:Name="Grid_Qualité" AllowDrop="True"  >
 
 
-            <Button x:Name="Operationnel" Content="Rechercher une affaire&#xD;&#xA;Répondre à une affaire&#xD;&#xA;Etudier l'affaire&#xD;&#xA;Réaliser le chantier&#xD;&#xA;Mise en service&#xD;&#xA;Clore le chantier&#xD;&#xA;&#xD;&#xA;" Height="140" Margin="578,0,509,143" VerticalAlignment="Bottom" IsTabStop="False" FontWeight="Bold" IsHitTestVisible="True" AllowDrop="True" Focusable="False" Cursor="Hand" FontSize="16">
+            <Button x:Name="Bouton_Operationnel" Content="Rechercher une affaire&#xD;&#xA;Répondre à une affaire&#xD;&#xA;Etudier l'affaire&#xD;&#xA;Réaliser le chantier&#xD;&#xA;Mise en service&#xD;&#xA;Clore le chantier&#xD;&#xA;&#xD;&#xA;" Height="140" Margin="578,0,509,143" VerticalAlignment="Bottom" IsTabStop="False" FontWeight="Bold" IsHitTestVisible="True" AllowDrop="True" Focusable="False" Cursor="Hand" FontSize="16">
 
                 <Button.Background>
                     <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
@@ -43,7 +43,7 @@
                 </Rectangle.Stroke>
             </Rectangle>
             <TextBlock x:Name="Maitr_Ope" Height="21" Margin="578,0,499.5,303.5" TextWrapping="Wrap" Text="Maitrise opérationnel" VerticalAlignment="Bottom" FontWeight="Bold" FontSize="18" Foreground="#FFEE8E1B"/>
-            <Button x:Name="Achat" Content="Achat" HorizontalAlignment="Left" Margin="166,303.5,0,0" Width="231" Height="27" VerticalAlignment="Top" Cursor="Hand" Focusable="False" FontWeight="Bold" Foreground="Black" FontSize="16">
+            <Button x:Name="Bouton_Achat" Content="Achat" HorizontalAlignment="Left" Margin="166,303.5,0,0" Width="231" Height="27" VerticalAlignment="Top" Cursor="Hand" Focusable="False" FontWeight="Bold" Foreground="Black" FontSize="16">
                 <Button.Background>
                     <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
                         <GradientStop Color="#FFF3F3F3" Offset="0"/>
@@ -53,7 +53,7 @@
                     </LinearGradientBrush>
                 </Button.Background>
             </Button>
-            <Button x:Name="GérerRessourceHumaine" Content="Gérer les ressources humaines" HorizontalAlignment="Left" Margin="166,348.5,0,344.5" Width="231" FontWeight="Bold"  Cursor="Hand" Focusable="False" FontSize="16">
+            <Button x:Name="Bouton_GererRessourceHumaine" Content="Gérer les ressources humaines" HorizontalAlignment="Left" Margin="166,348.5,0,344.5" Width="231" FontWeight="Bold"  Cursor="Hand" Focusable="False" FontSize="16">
                 <Button.Background>
                     <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
                         <GradientStop Color="#FFF3F3F3" Offset="0"/>
@@ -71,7 +71,7 @@
                 </Rectangle.Stroke>
             </Rectangle>
             <TextBlock x:Name="Maitrise_Ressource" HorizontalAlignment="Left" Margin="166,228.917,0,0" TextWrapping="Wrap" Text="Maitrise des ressources" Width="231" FontSize="20" FontWeight="Bold" Foreground="#FFB91212" Height="25.5" VerticalAlignment="Top"/>
-            <Button x:Name="DirigeSociete" Content="Diriger la société" Height="30" Margin="570,149,499.5,0" VerticalAlignment="Top" FontWeight="Bold" Cursor="Hand" Focusable="False" FontSize="16">
+            <Button x:Name="Bouton_DirigerSociete" Content="Diriger la société" Height="30" Margin="570,149,499.5,0" VerticalAlignment="Top" FontWeight="Bold" Cursor="Hand" Focusable="False" FontSize="16">
                 <Button.Background>
                     <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
                         <GradientStop Color="#FFF3F3F3" Offset="0"/>
@@ -90,7 +90,7 @@
                 </Rectangle.Stroke>
             </Rectangle>
             <TextBlock x:Name="TextMaitrise_Manag" Height="38" Margin="452.5,75.5,386,0" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold" FontSize="20" Foreground="#FF5AD337"><Run Text="Maî"/><Run Text="trise du management et de l'org"/><Run Text="a"/><Run Text="nisation"/></TextBlock>
-            <Button x:Name="Qualite_Environnement" Content="Qualité et environnement" HorizontalAlignment="Right" Margin="0,303.5,135,0" Width="201.5" Height="31.5" VerticalAlignment="Top" FontWeight="Bold" Cursor="Hand" Focusable="False" FontSize="16">
+            <Button x:Name="Bouton_QualiteEnvironnement" Content="Qualité et environnement" HorizontalAlignment="Right" Margin="0,303.5,135,0" Width="201.5" Height="31.5" VerticalAlignment="Top" FontWeight="Bold" Cursor="Hand" Focusable="False" FontSize="16">
                 <Button.Background>
                     <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
                         <GradientStop Color="#FFF3F3F3" Offset="0"/>
@@ -102,7 +102,7 @@
                     </LinearGradientBrush>
                 </Button.Background>
             </Button>
-            <Button x:Name="Prevention" Content="Prévention" HorizontalAlignment="Right" Margin="0,348.5,135,344.5" Width="201.5" FontWeight="Bold" Cursor="Hand" Focusable="False" FontSize="16">
+            <Button x:Name="Bouton_Prevention" Content="Prévention" HorizontalAlignment="Right" Margin="0,348.5,135,344.5" Width="201.5" FontWeight="Bold" Cursor="Hand" Focusable="False" FontSize="16">
                 <Button.Background>
                     <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
                         <GradientStop Color="#FFF3F3F3" Offset="0"/>
@@ -122,14 +122,13 @@
                 </Rectangle.Stroke>
             </Rectangle>
             <TextBlock x:Name="Text_AnalyseAmelioration" HorizontalAlignment="Right" Margin="0,228.917,117,0" TextWrapping="Wrap" Width="233" FontWeight="Bold" FontSize="20" Height="32.5" VerticalAlignment="Top" Foreground="#FF2ADAD2"><Run Text="Analyse et "/><Run Text="amélioration"/></TextBlock>
-            <Button x:Name="Bouton_DoterMoyenMaterielle" Content="Se doter des moyens matériels"  Cursor="Hand" HorizontalAlignment="Left" Height="30" Margin="35,54,0,0" VerticalAlignment="Top" Width="257" FontWeight="Bold" Focusable="False" UseLayoutRounding="True" FontSize="16">
-                <Button.CacheMode>
-                    <BitmapCache/>
-                </Button.CacheMode>
+            <Button x:Name="Bouton_DoterMoyenMaterielle" Content="Se doter des moyens matériels"  Cursor="Hand" HorizontalAlignment="Left" Height="30" Margin="35,54,0,0" VerticalAlignment="Top" Width="257" Focusable="False" UseLayoutRounding="True" FontSize="16" IsHitTestVisible="True" AllowDrop="True" FontWeight="Bold">
                 <Button.Background>
-                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                        <GradientStop Color="White" Offset="0.196"/>
-                        <GradientStop Color="#FFEA3333" Offset="0.835"/>
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                        <GradientStop Color="White" Offset="0.222"/>
+                        <GradientStop Color="White" Offset="0.113"/>
+                        <GradientStop Color="White" Offset="0.143"/>
+                        <GradientStop Color="#FFF93030" Offset="0.739"/>
                     </LinearGradientBrush>
                 </Button.Background>
             </Button>
@@ -670,8 +669,8 @@
 
 
         </Grid>
-        <Grid x:Name="Grid_AffectationRessource" Visibility="Hidden" >
-            <Button x:Name="Bouton_PlanningProjet" Content="   Planning du &#xA;  service projet" Height="60" Margin="125,0,0,135" VerticalAlignment="Bottom" BorderBrush="#FF1ED479" Background="#FF28DA30" Cursor="Hand" Focusable="False" FontWeight="Bold" HorizontalAlignment="Left" Width="125"/>
+        <Grid x:Name="Grid_AffectationRessource" Visibility="Hidden"  >
+            <Button x:Name="Bouton_PlanningProjet" Content=" Planning du &#xA;service projet" Height="60" Margin="125,0,0,135" VerticalAlignment="Bottom" BorderBrush="#FF1ED479" Background="#FF28DA30" Cursor="Hand" Focusable="False" FontWeight="Bold" HorizontalAlignment="Left" Width="135" FontSize="14"/>
             <TextBlock x:Name="text_AffectationRessource" Height="30" Margin="465,20,470,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="AFFECTATION D'UNE RESSOURCE" Foreground="Black" FontWeight="Bold" FontSize="16"/>
             <TextBlock x:Name="text_DescriptAffectRessource" Margin="125,92.973,165,220" TextWrapping="Wrap" FontWeight="Bold" FontSize="16" Foreground="Black"><Span TextDecorations="Underline"><Run Text="Condition nécessaire"/></Span><Span><Run Text=": Décision approuvée d'étude d'un dossier (=« Go »)"/></Span><LineBreak/><LineBreak/><Span><Run Text="Une fois la décision notifiée au Responsable du Service Projet par le Directeur ou un Chef d'entreprise de répondre à un appel d'offre, le Responsable du Service Projet :"/></Span><LineBreak/><LineBreak/><Run Text="&#x9;"/><Run Text="•Récupère l'ensemble du dossier de consultation et le sauvegarde sur le serveur « PROJETS »."/><LineBreak/><Run Text="&#x9;"/><Run Text="•Analyse les documents et identifie les échéances de l'appel d'offres"/><Run Text="."/><LineBreak/><Run Text="&#x9;"/><Run Text="•Identifie dans le « Planning du service Projet », les ressources disponibles et affectées au projet ainsi que les échéances importantes (date de rendu, date de visite, rendez-vous , soutenances,…. )"/><LineBreak/><Run Text="&#x9;"/><Run Text="•Il diffuse le « Planning du service Projet » hebdomadairement au Directeur, Chefs d'entreprise et Responsable Commercial."/><LineBreak/><Run Text="             "/><Run Text="•Demande au Responsable Administratif et Comptable de l'entreprise concernée la création d'un numéro devis sur CODEX/SAP, qu'il transmet aux personnes concernées par le chiffrage."/><LineBreak/><Run Text="&#x9;"/><Run Text="•Fait valider au chef d'entreprise concerné la ressource identifiée et valide la faisabilité de la réponse."/><LineBreak/><LineBreak/><LineBreak/><LineBreak/><Span TextDecorations="Underline"><Run Text="Parties prenantes:  "/></Span><Span><Run Text="Responsable Service Projet"/></Span><LineBreak/></TextBlock>
             <Rectangle Height="54.901" Margin="355,5.099,450,0" StrokeThickness="10" VerticalAlignment="Top">
@@ -1023,7 +1022,7 @@
                 </Button.Background>
             </Button>
         </Grid>
-        <Grid x:Name="Grid_RealiserChantier" Visibility="Hidden">
+        <Grid x:Name="Grid_RealiserChantier" Visibility="Hidden" >
             <Image x:Name="Img_Future2" Source="Image46-ConvertImage.png" Stretch="Fill" Panel.ZIndex="-1"/>
             <Button x:Name="Bouton_DeclencherAnimerReunionPassation" Content="Déclencher et animer la&#xA;   réunion de passation" HorizontalAlignment="Left" Height="45" Margin="955.454,46.773,0,0" VerticalAlignment="Top" Width="160" FontSize="14" FontWeight="Bold" Cursor="Hand" Focusable="False">
                 <Button.Background>
@@ -1269,7 +1268,7 @@
                     </LinearGradientBrush>
                 </Button.Background>
             </Button>
-            <Image x:Name="barre_PNG2" HorizontalAlignment="Left" Margin="85,250,0,0" Source="barre.PNG" Stretch="Fill" Width="5" Height="63.333" VerticalAlignment="Top"/>
+            <Image x:Name="barre_PNG2" HorizontalAlignment="Left" Margin="85,265,0,0" Source="barre.PNG" Stretch="Fill" Width="5" Height="63.333" VerticalAlignment="Top"/>
             <Image x:Name="barre_PNG2_Copy" HorizontalAlignment="Left" Margin="129.287,221,0,0" Source="barre.PNG" Stretch="Fill" Width="5" Height="90.333" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
                 <Image.RenderTransform>
                     <TransformGroup>
@@ -1319,7 +1318,7 @@
                     </LinearGradientBrush>
                 </Rectangle.Stroke>
             </Rectangle>
-            <Button x:Name="Bouton_PasserCommande_DefinirBesoinMainOeuvre" Content="Passer les commandes et définir &#xA;    les besoin en main d'oeuvre" HorizontalAlignment="Right" Margin="0,339,268.546,0" Width="220" VerticalAlignment="Top" Height="46" FontWeight="Bold" Opacity="0.96" FontSize="14" Focusable="False" Cursor="Hand">
+            <Button x:Name="Bouton_PasserCommande" Content="Passer les commandes&#xD;&#xA;" HorizontalAlignment="Right" Margin="0,339,268.546,0" Width="220" VerticalAlignment="Top" Height="46" FontWeight="Bold" Opacity="0.96" FontSize="14" Focusable="False" Cursor="Hand">
                 <Button.Background>
                     <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
                         <GradientStop Color="White" Offset="0"/>
@@ -1531,6 +1530,26 @@
                 </Image.RenderTransform>
             </Image>
             <Image x:Name="Fleche_png1_Copy11" Margin="641.454,515,0,0" Source="Fleche.png" Stretch="Fill" Height="31.662" VerticalAlignment="Top" HorizontalAlignment="Left" Width="23.546" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="89.567"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Button x:Name="Bouton_DefinirBesoinMainOeuvre" Content="Définir les besoins en main &#xD;&#xA;&#x9;d'oeuvre" HorizontalAlignment="Right" Height="46" Margin="0,0,269,266" VerticalAlignment="Bottom" Width="220" RenderTransformOrigin="0.69,0.5" FontWeight="Bold" FontSize="14" Focusable="False" Cursor="Hand">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                        <GradientStop Color="White" Offset="0"/>
+                        <GradientStop Color="White" Offset="0.5"/>
+                        <GradientStop Color="White" Offset="0.561"/>
+                        <GradientStop Color="#FF7EF583" Offset="0.583"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Image x:Name="Fleche_png1_Copy63" Margin="891,381,0,0" Source="Fleche.png" Stretch="Fill" Height="31.662" VerticalAlignment="Top" HorizontalAlignment="Left" Width="23.546" RenderTransformOrigin="0.5,0.5">
                 <Image.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>
@@ -2442,7 +2461,7 @@
 
 
         </Grid>
-        <Grid x:Name="Grid_AnalyseFonctionnel" Visibility="Hidden">
+        <Grid x:Name="Grid_AnalyseFonctionnel" Visibility="Hidden" >
             <Button x:Name="Bouton_Retour46" Content="Retour" HorizontalAlignment="Left" Height="40" Margin="55,24.963,0,0" VerticalAlignment="Top" Width="95" Background="#FF2999D8" FontWeight="Bold" Cursor="Hand" Focusable="False" FontSize="14"/>
             <TextBlock x:Name="text_AnalyseFonctionnel" Height="25.037" Margin="560,24.963,555,0" TextWrapping="Wrap" Text="Analyse fonctionnelle" VerticalAlignment="Top" Foreground="#FF44BF4F" FontWeight="Bold" FontSize="16"/>
             <Rectangle Height="54.963" Margin="525,10,525,0" StrokeThickness="10" VerticalAlignment="Top">
@@ -2454,7 +2473,7 @@
                 </Rectangle.Stroke>
             </Rectangle>
             <TextBlock x:Name="text_DescripAnalyseFonctionnel" Margin="245,155,185,150" TextWrapping="Wrap" Foreground="Black" FontWeight="Bold" FontSize="16"><Run Text="Conditions nécessaires: la tache schématique doit être finalisée en indice 0"/><Run Text="."/><LineBreak/><Run/><LineBreak/><Run Text="Cette note est le lien entre"/><LineBreak/><Run Text="- les études de dimensionnement et de prépration aux achats et installation"/><LineBreak/><Run Text="- la fonctionnalité finale des ouvrages"/><LineBreak/><Run Text="Il est donc impératif que ces documents fassent l'objet d'une revue de conception RC4"/><Run Text="a"/><Run Text="."/><Run Text=" "/><LineBreak/><Run/><LineBreak/><Run Text="L"/><Run Text="a RC n°4a est cumulable à la 4b et 4c en fonction de la taille, de la typologie, et du timing de chaque projet. Ce choix est à discuter en REVUE DE TRANSFERT"/><LineBreak/><Run/><LineBreak/><LineBreak/><Run/><LineBreak/><Run Text="Parties prenantes: Ingénieur Electricité-régulation-automation, responsable metteurs au point"/><Run Text="."/><LineBreak/><Run Foreground="#FF29B600" Text="Valideur interne: RA (ou CDG)"/><LineBreak/><Run Foreground="#FF29B600" Text="Valideur externe: MOE. A diffuser pour info au lot GTB (BMS)"/></TextBlock>
-            <Button x:Name="Bouton_RC4a_AnalyseFonct" Content="Revue des schéma /AF (RC4a)" HorizontalAlignment="Left" Margin="245,0,0,165" Width="220" Background="#FFF9CC00" FontWeight="Bold" FontSize="14" Focusable="False" Cursor="Hand" Height="60" VerticalAlignment="Bottom"/>
+            <Button x:Name="Bouton_RC4a_AnalyseFonct" Content="Revue des schémas /AF (RC4a)" HorizontalAlignment="Left" Margin="245,0,0,165" Width="220" Background="#FFF9CC00" FontWeight="Bold" FontSize="14" Focusable="False" Cursor="Hand" Height="60" VerticalAlignment="Bottom"/>
 
 
         </Grid>
@@ -3010,10 +3029,10 @@
             </Rectangle>
 
         </Grid>
-        <Grid x:Name="Grid_RealiserVic" Visibility="Hidden"  >
+        <Grid x:Name="Grid_RealiserVic" Visibility="Hidden" >
             <Button x:Name="Bouton_Retour63" Content="Retour" Height="40" Margin="55,24.963,0,0" VerticalAlignment="Top" Background="#FF2999D8" FontWeight="Bold" Cursor="Hand" Focusable="False" FontSize="14" HorizontalAlignment="Left" Width="95"/>
             <TextBlock x:Name="Text_RealiserVic" Text="Réaliser la VIC" Height="20.037" Margin="585,33.493,585,0" VerticalAlignment="Top" Foreground="#FF35D16D" FontWeight="Bold" FontSize="16"/>
-            <TextBlock x:Name="Text_DescriptRealiserVIC" Text="Cette partie est toujours en développement" Height="35" Foreground="Black" FontWeight="Bold" FontSize="22" Margin="410,230,410,0" VerticalAlignment="Top"/>
+            <TextBlock x:Name="Text_DescriptRealiserVIC" Foreground="Black" FontWeight="Bold" FontSize="16" Margin="275,180,280,150"><Run Text="Visite d'inspection commune"/><Run Text=" :"/><LineBreak/><Run/><LineBreak/><Run Text="&#x9;- Demande PGC marche"/><LineBreak/><Run Text="&#x9;- Demande PIC "/><LineBreak/><Run/><LineBreak/><Run Text="Réalisation du PPSPS et diffusion à tous +W CH"/><LineBreak/><Run/><Run Text="Réalisation de la VIC avec le SPS"/></TextBlock>
             <Rectangle Height="55.037" Margin="555,18,555,0" StrokeThickness="10" VerticalAlignment="Top">
                 <Rectangle.Stroke>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -3051,18 +3070,39 @@
                 </Rectangle.Stroke>
             </Rectangle>
         </Grid>
-        <Grid x:Name="Grid_PasserCommande_DefinirBesoinMainOeuvre" Visibility="Hidden">
+        <Grid x:Name="Grid_PasserCommande" Visibility="Hidden">
             <Button x:Name="Bouton_Retour66" Content="Retour" Height="40" Margin="55,24.963,0,0" VerticalAlignment="Top" Background="#FF2999D8" FontWeight="Bold" Cursor="Hand" Focusable="False" FontSize="14" HorizontalAlignment="Left" Width="95"/>
-            <TextBlock x:Name="Text_PasserCommande_DefinirBesoinMainOeuvre" Height="40" Margin="520,24.963,515,0" VerticalAlignment="Top" Foreground="#FF00BF46" FontSize="16" FontWeight="Bold"><Run Text="Passer les commandes et définir "/><LineBreak/><Run Text="   "/><Run Text="les besoins en main d'oeuvre"/></TextBlock>
-            <TextBlock x:Name="Text_DescriptPasserCommande_DefinirBesoinMainOeuvre" Text="Cette partie est toujours en développement" Height="40" Margin="405,190,410,0" Foreground="Black" FontWeight="Bold" FontSize="22" VerticalAlignment="Top"/>
-            <Rectangle Height="65.037" Margin="490,15,490,0" StrokeThickness="10" VerticalAlignment="Top">
+            <TextBlock x:Name="Text_PasserCommande" Height="30.037" Margin="555,35,555,0" VerticalAlignment="Top" Foreground="#FF00BF46" FontSize="16" FontWeight="Bold"><Run Text="Passer les commandes"/></TextBlock>
+            <TextBlock x:Name="Text_DescriptPasserCommande" Text="Cette partie est toujours en développement" Height="40" Margin="410,145,405,0" Foreground="Black" FontWeight="Bold" FontSize="22" VerticalAlignment="Top"/>
+            <Rectangle Height="55" Margin="525,20,525,0" StrokeThickness="10" VerticalAlignment="Top">
                 <Rectangle.Stroke>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                         <GradientStop Color="Black" Offset="0"/>
                         <GradientStop Color="#FF1FC545" Offset="1"/>
                     </LinearGradientBrush>
                 </Rectangle.Stroke>
+
             </Rectangle>
+            <Button x:Name="Bouton_ConsultationFournisseur" Content="Consultation fournisseur" Height="50" Margin="525,250,535,0" VerticalAlignment="Top" BorderBrush="#FF1FC545" FontWeight="Bold" FontSize="14" Focusable="False" Cursor="Hand">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                        <GradientStop Color="#FFF3F3F3" Offset="0"/>
+                        <GradientStop Color="#FFEBEBEB"/>
+                        <GradientStop Color="#FFDDDDDD"/>
+                        <GradientStop Color="#FFE2E2E2" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button x:Name="Bouton_ConsultationSousTraitant" Cursor="Hand"   Content="Consultation sous-traitant" Margin="525,0,535,290" Height="50" VerticalAlignment="Bottom" FontWeight="Bold" FontSize="14" BorderBrush="#FF1FC545" Focusable="False">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                        <GradientStop Color="#FFF3F3F3" Offset="0"/>
+                        <GradientStop Color="#FFEBEBEB"/>
+                        <GradientStop Color="#FFDDDDDD"/>
+                        <GradientStop Color="#FFE2E2E2" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
         </Grid>
         <Grid x:Name="Grid_RealiserRevue" Visibility="Hidden">
             <Button x:Name="Bouton_Retour67" Content="Retour" Height="40" Margin="55,24.963,0,0" VerticalAlignment="Top" Background="#FF2999D8" FontWeight="Bold" Cursor="Hand" Focusable="False" FontSize="14" HorizontalAlignment="Left" Width="95"/>
@@ -3663,7 +3703,7 @@
                 </Rectangle.Stroke>
             </Rectangle>
         </Grid>
-        <Grid x:Name="Grid_EtudeGraphique3D" Visibility="Hidden" >
+        <Grid x:Name="Grid_EtudeGraphique3D" Visibility="Hidden">
 
             <Button x:Name="Bouton_Retour96" Content="Retour" Height="40" Margin="55,24.963,0,0" VerticalAlignment="Top" Background="#FF2999D8" FontWeight="Bold" Cursor="Hand" Focusable="False" FontSize="14" HorizontalAlignment="Left" Width="95"/>
             <TextBlock x:Name="Text_EtudeGraphique_3D" Text="Etude graphique 3D" Height="30" Margin="565,24.963,560,0" VerticalAlignment="Top" d:LayoutOverrides="Height" Foreground="Black" FontWeight="Bold" FontSize="16"/>
@@ -3695,7 +3735,7 @@
                     </LinearGradientBrush>
                 </Button.Background>
             </Button>
-            <Button x:Name="Bouton_MaquetteReferenceSynthese3D" Content="Maquettte de référence&#xD;&#xA;             Synthèse" Margin="515,290,515,0" FontWeight="Bold" FontSize="14" BorderBrush="#FF2DCF68" Focusable="False" Cursor="Hand" Height="60" VerticalAlignment="Top">
+            <Button x:Name="Bouton_MaquetteReferenceSynthese3D" Content="Maquette de référence&#xA;             Synthèse" Margin="515,290,515,0" FontWeight="Bold" FontSize="14" BorderBrush="#FF2DCF68" Focusable="False" Cursor="Hand" Height="60" VerticalAlignment="Top">
                 <Button.Background>
                     <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
                         <GradientStop Color="White" Offset="0"/>
@@ -3870,7 +3910,7 @@
         <Grid x:Name="Grid_PhasePlanExecutionOuvrage3D" Visibility="Hidden" >
             <Button x:Name="Bouton_Retour104" Content="Retour" Height="40" Margin="55,24.963,0,0" VerticalAlignment="Top" Background="#FF2999D8" FontWeight="Bold" Cursor="Hand" Focusable="False" FontSize="14" HorizontalAlignment="Left" Width="95"/>
             <TextBlock x:Name="Text_PhasePlanExecutionOuvrage3D" Text="Phase plans d'exécution des ouvrages" Width="300" Height="30" Margin="490,34.963,490,0" VerticalAlignment="Top" d:LayoutOverrides="Height" Foreground="#FF26C575" FontWeight="Bold" FontSize="16"></TextBlock>
-            <TextBlock x:Name="Text_DescriptPhasePlanExecutionOuvrage3D" Text="Conditions: Maquette BIM TCE Finalisée. Extraction 2D épurée et lissée préalablement. Reraitement autocad si nécessaire." Width="1000" Margin="155,250,125,275" Foreground="Black" FontWeight="Bold" FontSize="16"/>
+            <TextBlock x:Name="Text_DescriptPhasePlanExecutionOuvrage3D" Width="1000" Margin="155,250,125,275" Foreground="Black" FontWeight="Bold" FontSize="16"><Run Text="Conditions: Maquette BIM TCE Finalisée. Extraction 2D épurée et lissée préalablement. Re"/><Run Text="trait"/><Run Text="ement autocad si nécessaire."/></TextBlock>
             <Rectangle Height="55.037" Margin="430,19.963,445,0" StrokeThickness="10" VerticalAlignment="Top">
                 <Rectangle.Stroke>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -3925,7 +3965,6 @@
 
         </Grid>
         <Grid x:Name="Grid_RevueConception4c_EtudeGraphique3D" Visibility="Hidden"  >
-            <Image x:Name="Image63_png" HorizontalAlignment="Left" Source="Image68.png" Stretch="Fill" Width="538" Margin="35,320,0,41"/>
             <Button x:Name="Bouton_Retour106" Content="Retour" Height="40" Margin="55,24.963,0,0" VerticalAlignment="Top" Background="#FF2999D8" FontWeight="Bold" Cursor="Hand" Focusable="False" FontSize="14" HorizontalAlignment="Left" Width="95"/>
             <TextBlock x:Name="Text_RevueConception4c_EtudeGraphique3D" Text="Revue de conception N°4(c)" Height="30" Margin="530,34.963,535,0" VerticalAlignment="Top" d:LayoutOverrides="Height" Foreground="Black" FontWeight="Bold" FontSize="16"/>
             <TextBlock x:Name="Text_DescriptRevueConception4c_EtudeGraphique3D" Text="Cette partie est toujours en développement" Margin="405,205,420,0" Foreground="Black" FontWeight="Bold" FontSize="22" Height="30" VerticalAlignment="Top">
@@ -3981,10 +4020,10 @@
                 </Rectangle.Stroke>
             </Rectangle>
         </Grid>
-        <Grid x:Name="Grid_PhasePlanExecution3D" Visibility="Hidden" >
+        <Grid x:Name="Grid_PhasePlanExecution3D" Visibility="Hidden">
             <Button x:Name="Bouton_Retour109" Content="Retour" Height="40" Margin="55,24.963,0,0" VerticalAlignment="Top" Background="#FF2999D8" FontWeight="Bold" Cursor="Hand" Focusable="False" FontSize="14" HorizontalAlignment="Left" Width="95"/>
             <TextBlock x:Name="Text_PhasePlanExecution3D" Text="Phase plans d'exécution" Height="25" Margin="545,24.963,550,0" VerticalAlignment="Top" d:LayoutOverrides="Height" Foreground="#FF21BB3D" FontWeight="Bold" FontSize="16"/>
-            <TextBlock x:Name="Text_DescriptPhasePlanExecution3D" Width="1000" Height="105" Margin="140,210,140,0" Foreground="Black" FontWeight="Bold" FontSize="16" VerticalAlignment="Top"><Run Text="Conditions: Plans P.E.O validés à minima VAO par la MOE et le BCT. Notes de calculs et schémas validés en VAO à minima par MOE et"/><LineBreak/><Run Text="BCT. "/><Run Text="Extraction 2D épurée et lissée préalablement. Reraitement autocad si nécessaire." TextDecorations="Underline"/></TextBlock>
+            <TextBlock x:Name="Text_DescriptPhasePlanExecution3D" Width="1000" Height="105" Margin="140,210,140,0" Foreground="Black" FontWeight="Bold" FontSize="16" VerticalAlignment="Top"><Run Text="Conditions: Plans P.E.O validés à minima VAO par la MOE et le BCT. Notes de calculs et schémas validés en VAO à minima par MOE et"/><LineBreak/><Run Text="BCT. "/><Run Text="Extraction 2D épurée et lissée préalablement. Re" TextDecorations="Underline"/><Run Text="trait" TextDecorations="Underline"/><Run Text="ement autocad si nécessaire." TextDecorations="Underline"/></TextBlock>
             <Rectangle Height="55.037" Margin="525,9.926,530,0" StrokeThickness="10" VerticalAlignment="Top">
                 <Rectangle.Stroke>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -4079,7 +4118,6 @@
             </Rectangle>
         </Grid>
         <Grid x:Name="Grid_RevueConception4B" Visibility="Hidden">
-            <Image x:Name="Image69_png" HorizontalAlignment="Left" Source="Image68.png" Stretch="Fill" Width="538" Margin="35,320,0,41"/>
             <Button x:Name="Bouton_Retour114" Content="Retour" Height="40" Margin="55,24.963,0,0" VerticalAlignment="Top" Background="#FF2999D8" FontWeight="Bold" Cursor="Hand" Focusable="False" FontSize="14" HorizontalAlignment="Left" Width="95"/>
             <TextBlock x:Name="Text_RevueConception4B" Text="Revue de conception N°4(b)" Height="25" Margin="530,39.963,535,0" VerticalAlignment="Top" d:LayoutOverrides="Height" Foreground="#FFFD7E35" FontWeight="Bold" FontSize="16"/>
             <TextBlock x:Name="Text_DescriptRevueConception4B" Text="Cette partie est toujours en développement" Height="30" Margin="395,225,400,0" VerticalAlignment="Top" Foreground="Black" FontWeight="Bold" FontSize="22">
@@ -4110,7 +4148,6 @@
             </Rectangle>
         </Grid>
         <Grid x:Name="Grid_RevueSchemaAF" Visibility="Hidden"  >
-            <Image x:Name="Image67_png" HorizontalAlignment="Left" Source="Image68.png" Stretch="Fill" Width="538" Margin="35,320,0,41"/>
             <Button x:Name="Bouton_Retour115" Content="Retour" Height="40" Margin="55,24.963,0,0" VerticalAlignment="Top" Background="#FF2999D8" FontWeight="Bold" Cursor="Hand" Focusable="False" FontSize="14" HorizontalAlignment="Left" Width="95"/>
             <TextBlock x:Name="Text_RevueSchemaAF" Text="Revue des schémas/AF (RC4a)" Height="25" Margin="530,47.696,525,0" VerticalAlignment="Top" Foreground="#FFF7AB25" FontWeight="Bold" FontSize="16"/>
             <TextBlock x:Name="Text_DescriptRevueSchemaAF" Text="Cette partie est toujours en développement" Height="35" Margin="400,220,425,0" VerticalAlignment="Top" Foreground="Black" FontWeight="Bold" FontSize="22">
@@ -4142,7 +4179,6 @@
 
         </Grid>
         <Grid x:Name="Grid_RevueDesModif" Visibility="Hidden">
-            <Image x:Name="Image66_png" HorizontalAlignment="Left" Source="Image68.png" Stretch="Fill" Width="538" Margin="35,320,0,41"/>
             <Button x:Name="Bouton_Retour116" Content="Retour" Height="40" Margin="55,24.963,0,0" VerticalAlignment="Top" Background="#FF2999D8" FontWeight="Bold" Cursor="Hand" Focusable="False" FontSize="14" HorizontalAlignment="Left" Width="95"/>
             <TextBlock x:Name="Text_RevueDesModif" Text="Revue des modifications (RC N°4b)" Height="30" Width="280" Margin="500,34.963,500,0" VerticalAlignment="Top" d:LayoutOverrides="Height" Foreground="#FFFF9B23" FontWeight="Bold" FontSize="16"></TextBlock>
             <TextBlock x:Name="Text_DescriptRevueDesModif" Text="Cette partie est toujours en développement" Height="35" Margin="405,195,410,0" VerticalAlignment="Top" d:LayoutOverrides="Height" Foreground="Black" FontWeight="Bold" FontSize="22">
@@ -4173,7 +4209,6 @@
             </Rectangle>
         </Grid>
         <Grid x:Name="Grid_RevueEtudeAvancement"  Visibility="Hidden"   >
-            <Image x:Name="Image65_png" HorizontalAlignment="Left" Source="Image68.png" Stretch="Fill" Width="538" Margin="35,320,0,41"/>
             <Button x:Name="Bouton_Retour117" Content="Retour" Height="40" Margin="55,24.963,0,0" VerticalAlignment="Top" Background="#FF2999D8" FontWeight="Bold" Cursor="Hand" Focusable="False" FontSize="14" HorizontalAlignment="Left" Width="95"/>
             <TextBlock x:Name="Text_RevueEtudeAvancement" Text="Revue études avancement 70% (RC4c)" Height="35" Margin="495,47.696,495,0" VerticalAlignment="Top" Foreground="#FFF0911F" FontSize="16" FontWeight="Bold"/>
             <TextBlock x:Name="Text_DescriptRevueEtudeAvancement" Text="Cette partie est toujours en développement" Height="30" Margin="410,205,415,0" VerticalAlignment="Top" Foreground="Black" FontWeight="Bold" FontSize="22">
@@ -4204,7 +4239,6 @@
             </Rectangle>
         </Grid>
         <Grid x:Name="Grid_ReunionOrganisationChantierRC5" Visibility="Hidden" >
-            <Image x:Name="Image61_png" HorizontalAlignment="Left" Source="Image68.png" Stretch="Fill" Width="538" Margin="35,320,0,41"/>
             <Button x:Name="Bouton_Retour118" Content="Retour" Height="40" Margin="55,24.963,0,0" VerticalAlignment="Top" Background="#FF2999D8" FontWeight="Bold" Cursor="Hand" Focusable="False" FontSize="14" HorizontalAlignment="Left" Width="95"/>
             <TextBlock x:Name="Text_ReunionOrganisationChantierRC5" Text="Réunion d'organisation de chantier(RC5)" Height=" 30" Margin="490,34.963,485,0" VerticalAlignment="Top" d:LayoutOverrides="Height" Foreground="#FFFFA31F" FontWeight="Bold" FontSize="16"/>
             <TextBlock x:Name="Text_DescriptReunionOrganisationChantierRC5" Text="Cette partie est toujours en développement" Height="30" Margin="400,200,430,0" VerticalAlignment="Top" Foreground="Black" FontWeight="Bold" FontSize="22">
@@ -4235,7 +4269,6 @@
             </Rectangle>
         </Grid>
         <Grid x:Name="Grid_Revue70TravauxRC6" Visibility="Hidden"   >
-            <Image x:Name="Image64_png" HorizontalAlignment="Left" Source="Image68.png" Stretch="Fill" Width="538" Margin="35,320,0,41"/>
             <Button x:Name="Bouton_Retour119" Content="Retour" Height="40" Margin="55,24.963,0,0" VerticalAlignment="Top" Background="#FF2999D8" FontWeight="Bold" Cursor="Hand" Focusable="False" FontSize="14" HorizontalAlignment="Left" Width="95"/>
             <TextBlock x:Name="Text_Revue70TravauxRC6" Text="Revue 70% Travaux (RC6)" Width="200" Height="25" Margin="540,39.963,540,0" VerticalAlignment="Top" d:LayoutOverrides="Height" Foreground="#FFFBA63F" FontWeight="Bold" FontSize="16"></TextBlock>
             <TextBlock x:Name="Text_DescriptRevue70TravauxRC6" Text="Cette partie est toujours en développement" Width="450" Height="45" Foreground="Black" FontWeight="Bold" FontSize="22" Margin="415,195,415,0" VerticalAlignment="Top" d:LayoutOverrides="Height">
@@ -4274,7 +4307,6 @@
             </Rectangle>
         </Grid>
         <Grid x:Name="Grid_ReunionLancementMES_MAP_RC7" Visibility="Hidden" >
-            <Image x:Name="Image71_png" HorizontalAlignment="Left" Source="Image68.png" Stretch="Fill" Width="538" Margin="35,320,0,41"/>
             <Button x:Name="Bouton_Retour120" Content="Retour" Height="40" Margin="55,24.963,0,0" VerticalAlignment="Top" Background="#FF2999D8" FontWeight="Bold" Cursor="Hand" Focusable="False" FontSize="14" HorizontalAlignment="Left" Width="95"/>
             <TextBlock x:Name="Text_ReunionLancementMES_MAP_RC7" Text="Réunion de lancement MES/MAP(RC7)" Height="25" Margin="490,47.696,495,0" VerticalAlignment="Top" Foreground="#FFE28629" FontWeight="Bold" FontSize="16">
             </TextBlock>
@@ -4306,7 +4338,6 @@
             </TextBlock>
         </Grid>
         <Grid x:Name="Grid_RetourExperienceRC8" Visibility="Hidden">
-            <Image x:Name="Image62_png" HorizontalAlignment="Left" Source="Image68.png" Stretch="Fill" Width="538" Margin="35,320,0,41"/>
             <Button x:Name="Bouton_Retour121" Content="Retour" Height="40" Margin="55,24.963,0,0" VerticalAlignment="Top" Background="#FF2999D8" FontWeight="Bold" Cursor="Hand" Focusable="False" FontSize="14" HorizontalAlignment="Left" Width="95"/>
             <TextBlock x:Name="Text_RetourExperienceRC8" Text="Retour d'expérience (RC8)" Width="230" Height="25" Margin="530,52.013,520,0" VerticalAlignment="Top" d:LayoutOverrides="Height" Foreground="#FFFFAE21" FontWeight="Bold" FontSize="16" RenderTransformOrigin="0.5,0.5">
                 <TextBlock.RenderTransform>
@@ -4475,7 +4506,6 @@
         </Grid>
 
         <Grid x:Name="Grid_RC4a_EtudeExe" Visibility="Hidden" >
-            <Image x:Name="Image72_png" HorizontalAlignment="Left" Source="Image68.png" Stretch="Fill" Width="538" Margin="35,320,0,41"/>
 
             <Button x:Name="Bouton_Retour123" Content="Retour" Height="40" Margin="55,24.963,0,0" VerticalAlignment="Top" Background="#FF2999D8" FontWeight="Bold" Cursor="Hand" Focusable="False" FontSize="14" HorizontalAlignment="Left" Width="95"/>
             <TextBlock x:Name="Text_RC4a_EtudeExe" Text="Revue des schémas/AF (RC4a) " Height="26" Margin="520,47,525.001,0" VerticalAlignment="Top" Foreground="#FFE28D27" FontWeight="Bold" FontSize="16" RenderTransformOrigin="0.5,0.5">
@@ -4516,7 +4546,6 @@
 
         </Grid>
         <Grid x:Name="Grid_RC4b_EtudeExe" Visibility="Hidden" >
-            <Image x:Name="Image74_png" HorizontalAlignment="Left" Source="Image68.png" Stretch="Fill" Width="538" Margin="35,320,0,41"/>
             <Button x:Name="Bouton_Retour124" Content="Retour" Height="40" Margin="55,24.963,0,0" VerticalAlignment="Top" Background="#FF2999D8" FontWeight="Bold" Cursor="Hand" Focusable="False" FontSize="14" HorizontalAlignment="Left" Width="95"/>
             <TextBlock x:Name="Text_RC4b_EtudeExe" Text="Revue des modifications (RC4b)" Height="25" Margin="520,52.013,520,0" VerticalAlignment="Top" d:LayoutOverrides="Height" Foreground="#FFFFA233" FontWeight="Bold" FontSize="16"/>
             <TextBlock x:Name="Text_DescriptRC4b_EtudeExe" Text="Cette partie est toujours en développement" Height="50" Margin="410,220,410,0" VerticalAlignment="Top" d:LayoutOverrides="Height" FontWeight="Bold" FontSize="22" Foreground="Black">
@@ -4547,7 +4576,6 @@
             </Rectangle>
         </Grid>
         <Grid x:Name="Grid_RC4c_EtudeExe" Visibility="Hidden" >
-            <Image x:Name="Image75_png" HorizontalAlignment="Left" Source="Image68.png" Stretch="Fill" Width="538" Margin="35,320,0,41"/>
             <Button x:Name="Bouton_Retour125" Content="Retour" Height="40" Margin="55,24.963,0,0" VerticalAlignment="Top" Background="#FF2999D8" FontWeight="Bold" Cursor="Hand" Focusable="False" FontSize="14" HorizontalAlignment="Left" Width="95"/>
             <TextBlock x:Name="Text_RC4c_EtudeExe" Text="Revue d'étude avancement 70% (RC4c)" Height="25" Margin="520,52.013,460,0" VerticalAlignment="Top" d:LayoutOverrides="Height" Foreground="#FFF9A43F" FontWeight="Bold" FontSize="16"/>
             <TextBlock x:Name="Text_RC4c_Etude" Text="Cette partie est toujours en développement" Height="35" Margin="410,190,410,0" VerticalAlignment="Top" Foreground="Black" FontWeight="Bold" FontSize="22">
@@ -4653,8 +4681,983 @@
                 </Rectangle.Stroke>
             </Rectangle>
         </Grid>
-        <Image x:Name="Image151_png" Source="Image50.png" Stretch="Fill" Panel.ZIndex="-1"/>
+        <Grid x:Name="Grid_DirigerSociete" Visibility="Hidden" >
+            <Button x:Name="Bouton_Retour129" Content="Retour" Height="40" Margin="55,24.963,0,0" VerticalAlignment="Top" Background="#FF2999D8" FontWeight="Bold" Cursor="Hand" Focusable="False" FontSize="14" HorizontalAlignment="Left" Width="95"/>
+            <Button x:Name="Bouton_RecueillirDonnee" Cursor="Hand"   Content="Recueillir les données" Height="65" Margin="525,50,515,0" VerticalAlignment="Top" Width="240" FontWeight="Bold" FontSize="14" BorderBrush="#FF38E826" Focusable="False">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                        <GradientStop Color="White" Offset="0"/>
+                        <GradientStop Color="#FFEBEBEB" Offset="0.5"/>
+                        <GradientStop Color="White" Offset="0.5"/>
+                        <GradientStop Color="#FF38E826" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button x:Name="Bouton_DefinirOrientationObjectif" Cursor="Hand" Content="Définir les orientations &#xD;&#xA;      et les objectifs" Height="65" Margin="525,138,515,0" VerticalAlignment="Top" Width="240" FontWeight="Bold" FontSize="14" BorderBrush="#FF38E826" Focusable="False">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                        <GradientStop Color="White" Offset="0"/>
+                        <GradientStop Color="#FFEBEBEB" Offset="0.5"/>
+                        <GradientStop Color="White" Offset="0.5"/>
+                        <GradientStop Color="#FF38E826" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button x:Name="Bouton_DefinirOrganisation" Cursor="Hand" Content="Définir l'organisation" Margin="525,226,515,0" Height="65" Width="240" VerticalAlignment="Top" d:LayoutOverrides="Height" BorderBrush="#FF38E826" FontWeight="Bold" FontSize="14" Focusable="False">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                        <GradientStop Color="White" Offset="0"/>
+                        <GradientStop Color="#FFEBEBEB" Offset="0.5"/>
+                        <GradientStop Color="White" Offset="0.5"/>
+                        <GradientStop Color="#FF38E826" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button x:Name="Bouton_InformerSensibiliserCommuniquer" Cursor="Hand" Content="Informer sensibiliser&#xD;&#xA;      Communiquer" Margin="525,315,515,340" FontWeight="Bold" FontSize="14" BorderBrush="#FF38E826" Focusable="False">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                        <GradientStop Color="White" Offset="0"/>
+                        <GradientStop Color="White" Offset="0.5"/>
+                        <GradientStop Color="#FFE1EAE0" Offset="0.474"/>
+                        <GradientStop Color="#FF38E826" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button x:Name="Bouton_AnimerRevueDirection" Cursor="Hand"  Content="Animer les revues de direction" Height="65" Margin="525,0,515,253" VerticalAlignment="Bottom" FontWeight="Bold" FontSize="14" BorderBrush="#FF38E826" Focusable="False">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                        <GradientStop Color="White" Offset="0"/>
+                        <GradientStop Color="#FFEBEBEB" Offset="0.5"/>
+                        <GradientStop Color="White" Offset="0.5"/>
+                        <GradientStop Color="#FF38E826" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button x:Name="Bouton_AlimenterProcessusManagement_realisation" Cursor="Hand" Content="   Alimenter les processus de &#xD;&#xA;Management et de réalisation" Height="65" Margin="525,0,515,166" VerticalAlignment="Bottom" BorderBrush="#FF38E826" FontSize="14" FontWeight="Bold" Focusable="False">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                        <GradientStop Color="White" Offset="0"/>
+                        <GradientStop Color="#FFEBEBEB" Offset="0.5"/>
+                        <GradientStop Color="White" Offset="0.5"/>
+                        <GradientStop Color="#FF38E826" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Image x:Name="Fleche_png1_Copy35" Margin="636.454,110.9,620,0" Source="Fleche.png" Stretch="Fill" Height="31.662" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="89.567"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image x:Name="Fleche_png1_Copy36" Margin="636.454,199,620,0" Source="Fleche.png" Stretch="Fill" Height="31.662" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="89.567"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image x:Name="Fleche_png1_Copy37" Margin="636.454,287,620,0" Source="Fleche.png" Stretch="Fill" Height="31.662" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="89.567"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image x:Name="Fleche_png1_Copy38" Margin="636.454,376,620,0" Source="Fleche.png" Stretch="Fill" Height="31.662" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="89.567"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image x:Name="Fleche_png1_Copy39" Margin="636.454,462,620,0" Source="Fleche.png" Stretch="Fill" Height="31.662" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="89.567"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
 
+        </Grid>
+        <Grid x:Name="Grid_Achat" Visibility="hidden" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="163*"/>
+                <ColumnDefinition Width="93*"/>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="Bouton_Retour130" Content="Retour" Height="40" Margin="55,24.963,0,0" VerticalAlignment="Top" Background="#FF2999D8" FontWeight="Bold" Cursor="Hand" Focusable="False" FontSize="14" HorizontalAlignment="Left" Width="95"/>
+            <Button x:Name="Bouton_ReunionTransfert_Achat" Cursor="Hand"  Content="Réunion de Transfert" Height="60" Margin="0,70,45,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14" BorderBrush="Red" Focusable="False" HorizontalAlignment="Right" Width="260">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                        <GradientStop Color="White" Offset="0"/>
+                        <GradientStop Color="#FFEBEBEB"/>
+                        <GradientStop Color="#FFB0B0B0"/>
+                        <GradientStop Color="#FFC9C9C9" Offset="0.922"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button x:Name="Bouton_TransmissionTableau_ConsultationProjet" Cursor="Hand" Content="Transmission du tableau de&#xD;&#xA;       Consultation  projet" Height="60" Margin="0,160,45,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14" BorderBrush="Red" Focusable="False" HorizontalAlignment="Right" Width="260">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                        <GradientStop Color="White" Offset="0"/>
+                        <GradientStop Color="#FFB0B0B0"/>
+                        <GradientStop Color="#FFB0B0B0" Offset="0.13"/>
+                        <GradientStop Color="#FFC9C9C9" Offset="0.883"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button x:Name="Bouton_TableauAchatCompleter" Cursor="Hand" Content=" Tableau des achats complété :&#xD;&#xA;Budget / objectifs /fournisseurs" Height="60" Margin="0,250,45,0" VerticalAlignment="Top" BorderBrush="#FFFF2626" FontWeight="Bold" FontSize="14" Focusable="False" HorizontalAlignment="Right" Width="260">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                        <GradientStop Color="White" Offset="0"/>
+                        <GradientStop Color="#FFEBEBEB"/>
+                        <GradientStop Color="#FFB0B0B0" Offset="0.07"/>
+                        <GradientStop Color="#FFC9C9C9" Offset="0.935"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button x:Name="Bouton_MaterielStandard" Cursor="Hand" Content="Matériel standard" Height="75" Margin="210,0,395,200" VerticalAlignment="Bottom" BorderBrush="#FFFF0D0D" FontWeight="Bold" FontSize="14" Focusable="False">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                        <GradientStop Color="White" Offset="0"/>
+                        <GradientStop Color="#FFEBEBEB"/>
+                        <GradientStop Color="#FFB0B0B0" Offset="0.23"/>
+                        <GradientStop Color="#FFC9C9C9" Offset="0.917"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button x:Name="Bouton_MaterielSpecifique" Cursor="Hand"  Content="Matériel spécifique" Height="75" Margin="0,0,67.5,200" VerticalAlignment="Bottom" BorderBrush="Red" FontWeight="Bold" FontSize="14" Width="210" Focusable="False" HorizontalAlignment="Right" d:LayoutOverrides="Width">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                        <GradientStop Color="White" Offset="0"/>
+                        <GradientStop Color="#FFEBEBEB"/>
+                        <GradientStop Color="#FFB0B0B0" Offset="0.13"/>
+                        <GradientStop Color="#FFC9C9C9" Offset="0.948"/>
+                        <GradientStop Color="#FFE7E7E7"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button x:Name="Bouton_SousTraitance" Cursor="Hand" Content="Sous-Traitance" Height="75" Margin="50,0,205,200" VerticalAlignment="Bottom" FontWeight="Bold" FontSize="14" BorderBrush="Red" Focusable="False" Grid.Column="1">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                        <GradientStop Color="White" Offset="0"/>
+                        <GradientStop Color="#FFEBEBEB"/>
+                        <GradientStop Color="#FFB0B0B0" Offset="0.261"/>
+                        <GradientStop Color="#FFC9C9C9" Offset="0.957"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <TextBlock x:Name="Text_Validation_Achat" Margin="0,0,137.25,330" TextWrapping="Wrap" Text="Validation" FontWeight="Bold" FontSize="16" Foreground="#FFFF0D0D" Height="25" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="80"/>
+            <Rectangle Margin="0,350,90,315" Stroke="#FFFF2626" StrokeThickness="5" HorizontalAlignment="Right" Width="175"/>
+
+            <Image x:Name="Fleche_png1_Copy40" Margin="0,130,160,0" Source="Fleche.png" Stretch="Fill" Height="31.662" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Right" Width="31.895">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="89.567"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image x:Name="Fleche_png1_Copy41" Margin="0,220,160,0" Source="Fleche.png" Stretch="Fill" Height="31.662" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Right" Width="31.895">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="89.567"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image x:Name="Fleche_png1_Copy42" Margin="0,315,154.962,0" Source="Fleche.png" Stretch="Fill" Height="31.662" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Right" Width="41.895">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="89.567"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image x:Name="Fleche_png1_Copy43" Margin="0,410,154.962,0" Source="Fleche.png" Stretch="Fill" Height="31.662" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Right" Width="41.895">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="89.567"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image x:Name="Fleche_png1_Copy44" Margin="0,407.806,265.386,0" Source="Fleche.png" Stretch="Fill" Height="39.936" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Right" Width="135.064">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="156.797"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image x:Name="Fleche_png1_Copy45" Margin="731,407.806,-51.064,0" Source="Fleche.png" Stretch="Fill" Height="39.936" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" Width="135.064">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="382.901"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+
+
+        </Grid>
+        <Grid x:Name="Grid_MaterielStandard"  Visibility="Hidden" >
+            <Button x:Name="Bouton_Retour131" Content="Retour" Height="40" Margin="55,24.963,0,0" VerticalAlignment="Top" Background="#FF2999D8" FontWeight="Bold" Cursor="Hand" Focusable="False" FontSize="14" HorizontalAlignment="Left" Width="95"/>
+            <Button x:Name="Bouton_DefinitionListeMateriel" Cursor="Hand" Content="Définition de la liste matériel" Height="70" Margin="470,65,450,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14" BorderBrush="#FFFF1F1F" Focusable="False">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                        <GradientStop Color="White" Offset="0"/>
+                        <GradientStop Color="#FFEBEBEB"/>
+                        <GradientStop Color="#FFA4A4A4" Offset="0.152"/>
+                        <GradientStop Color="#FF9E9E9E" Offset="1"/>
+                        <GradientStop Color="#FFD4D4D4" Offset="0.97"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button x:Name="Bouton_ChoixFournisseur_DiffusionFicheTechnique" Cursor="Hand" Content="Choix du fournisseur et diffusion &#xA;          des fiches technique" Height="70" Margin="470,165,450,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14" BorderBrush="Red" Focusable="False">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                        <GradientStop Color="White" Offset="0"/>
+                        <GradientStop Color="#FFEBEBEB"/>
+                        <GradientStop Color="#FFA4A4A4" Offset="0.204"/>
+                        <GradientStop Color="#FFD4D4D4" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button x:Name="Bouton_ObtentionVisa_RedactionSignatureDA2" Cursor="Hand"  Content="Obtention du visa , rédaction et signature de la &#xD;&#xA;                                  DA^2" Margin="470,265,450,0" FontWeight="Bold" FontSize="14" BorderBrush="#FFFF0909" Height="75" VerticalAlignment="Top" Focusable="False">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                        <GradientStop Color="#FFF3F3F3" Offset="0"/>
+                        <GradientStop Color="#FFEBEBEB"/>
+                        <GradientStop Color="#FFA4A4A4" Offset="0.243"/>
+                        <GradientStop Color="#FFD4D4D4" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button x:Name="Bouton_PassageCommande" Cursor="Hand" Content="Passage de la commande" Margin="470,0,450,275" FontWeight="Bold" Height="75" VerticalAlignment="Bottom" FontSize="14" BorderBrush="#FFFF1010" Focusable="False">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                        <GradientStop Color="White" Offset="0"/>
+                        <GradientStop Color="#FFEBEBEB"/>
+                        <GradientStop Color="#FFA4A4A4" Offset="0.2"/>
+                        <GradientStop Color="#FFD4D4D4" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Image x:Name="Fleche_png1_Copy46" Margin="630,134,618.105,0" Source="Fleche.png" Stretch="Fill" Height="31.662" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="89.567"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image x:Name="Fleche_png1_Copy47" Margin="630,234,618.105,0" Source="Fleche.png" Stretch="Fill" Height="31.662" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="89.567"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image x:Name="Fleche_png1_Copy48" Margin="630,339,618.105,0" Source="Fleche.png" Stretch="Fill" Height="31.662" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="89.567"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        </Grid>
+        <Grid x:Name="Grid_MaterielSpecifique" Visibility="Hidden"  >
+            <Button x:Name="Bouton_Retour132" Content="Retour" Height="40" Margin="55,24.963,0,0" VerticalAlignment="Top" Background="#FF2999D8" FontWeight="Bold" Cursor="Hand" Focusable="False" FontSize="14" HorizontalAlignment="Left" Width="95"/>
+            <Button x:Name="Bouton_DefinitionStrategieAchat_MaterielSpecifique" Cursor="Hand" Content="Définition de la stratégie d'achat" Height="50" Margin="485,195,495,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14" BorderBrush="Red" Focusable="False">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                        <GradientStop Color="White" Offset="0"/>
+                        <GradientStop Color="#FFEBEBEB"/>
+                        <GradientStop Color="#FFDADADA" Offset="0.135"/>
+                        <GradientStop Color="#FFDADADA" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button x:Name="Bouton_NegociationPrixCondition_MaterielSpecifique" Cursor="Hand" Content="Négociation prix et conditions" Margin="485,268,495,0" Height="50" VerticalAlignment="Top" FontWeight="Bold" FontSize="14" Focusable="False" BorderBrush="Red">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                        <GradientStop Color="White" Offset="0"/>
+                        <GradientStop Color="#FFEBEBEB"/>
+                        <GradientStop Color="#FFDADADA" Offset="0.183"/>
+                        <GradientStop Color="#FFDADADA" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button x:Name="Bouton_ChoixDiffusionFicheTechnique_MaterielSpecifique" Cursor="Hand" Content="Choix et diffusion des fiches techniques" Margin="485,340,495,330" FontWeight="Bold" FontSize="14" BorderBrush="Red" Focusable="False">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                        <GradientStop Color="White" Offset="0"/>
+                        <GradientStop Color="#FFEBEBEB"/>
+                        <GradientStop Color="#FFDADADA" Offset="0.187"/>
+                        <GradientStop Color="#FFDADADA" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button x:Name="Bouton_ObtentionVisa_RedactionSignature_MaterielSpecifique" Cursor="Hand" Content="Obtention du visa, rédaction et signature &#xA;                de la DA^3 avec TCO" Margin="485,0,495,258" RenderTransformOrigin="0.4,0.583" Height="50" VerticalAlignment="Bottom" FontWeight="Bold" FontSize="14" BorderBrush="Red" Focusable="False">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                        <GradientStop Color="White" Offset="0"/>
+                        <GradientStop Color="#FFEBEBEB"/>
+                        <GradientStop Color="#FFDADADA" Offset="0.135"/>
+                        <GradientStop Color="#FFDADADA" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button x:Name="Bouton_LancementConsultation_MaterielSpecifique" Cursor="Hand"  Content="Lancement des consultations" Height="50" Margin="485,28.77,495,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14" BorderBrush="Red" Focusable="False">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                        <GradientStop Color="White" Offset="0"/>
+                        <GradientStop Color="#FFEBEBEB"/>
+                        <GradientStop Color="#FFE2E2E2" Offset="0.122"/>
+                        <GradientStop Color="#FFDADADA" Offset="0.896"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button x:Name="Bouton_AlignementTechniqueOffre" Cursor="Hand"  Content="Alignement technique des offres" Height="50" Margin="485,102,495,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14" BorderBrush="Red" Focusable="False">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                        <GradientStop Color="White" Offset="0"/>
+                        <GradientStop Color="#FFEBEBEB"/>
+                        <GradientStop Color="#FFDADADA" Offset="0.126"/>
+                        <GradientStop Color="#FFDADADA" Offset="0.974"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Rectangle HorizontalAlignment="Right" Height="40" Margin="0,150,345,0" StrokeThickness="5" VerticalAlignment="Top" Width="100">
+                <Rectangle.Stroke>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black" Offset="0"/>
+                        <GradientStop Color="#FFFF4747" Offset="1"/>
+                    </LinearGradientBrush>
+                </Rectangle.Stroke>
+            </Rectangle>
+            <TextBlock x:Name="Text_Validation" HorizontalAlignment="Right" Height="25" Margin="0,160,355,0" TextWrapping="Wrap" Text="Validation" VerticalAlignment="Top" Width="80" FontWeight="Bold" FontSize="16" Foreground="#FFD12C2C"/>
+            <TextBlock x:Name="Text_PassageCommande" Height="25" Margin="540,0,545,200" TextWrapping="Wrap" Text="Passage de la commande" VerticalAlignment="Bottom" FontWeight="Bold" Foreground="#FFD32626" FontSize="16"/>
+            <Rectangle Height="45" Margin="525,0,535,190" VerticalAlignment="Bottom" StrokeThickness="5">
+                <Rectangle.Stroke>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black" Offset="0"/>
+                        <GradientStop Color="#FFFF4747" Offset="1"/>
+                    </LinearGradientBrush>
+                </Rectangle.Stroke>
+            </Rectangle>
+            <Image x:Name="Fleche_png1_Copy49" Margin="620,75,636.454,0" Source="Fleche.png" Stretch="Fill" Height="31.662" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="89.567"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image x:Name="Fleche_png1_Copy50" Margin="620,241,636.454,0" Source="Fleche.png" Stretch="Fill" Height="31.662" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="89.567"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image x:Name="Fleche_png1_Copy51" Margin="620,313,636.454,0" Source="Fleche.png" Stretch="Fill" Height="31.662" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="89.567"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image x:Name="Fleche_png1_Copy52" Margin="620,385,636.454,0" Source="Fleche.png" Stretch="Fill" Height="31.662" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="89.567"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image x:Name="Fleche_png1_Copy53" Margin="620,458,636.454,0" Source="Fleche.png" Stretch="Fill" Height="31.662" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="89.567"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image x:Name="Fleche_png1_Copy54" Margin="0,124,437.96,0" Source="Fleche.png" Stretch="Fill" Height="31.662" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Right" Width="60.497">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="37.973"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image x:Name="Fleche_png1_Copy55" Margin="0,189,441,0" Source="Fleche.png" Stretch="Fill" Height="31.662" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Right" Width="60.497">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="147.881"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        </Grid>
+        <Grid x:Name="Grid_SousTraitance" Visibility="Hidden"  >
+            <Button x:Name="Bouton_Retour133" Content="Retour" Height="40" Margin="55,24.963,0,0" VerticalAlignment="Top" Background="#FF2999D8" FontWeight="Bold" Cursor="Hand" Focusable="False" FontSize="14" HorizontalAlignment="Left" Width="95"/>
+            <Button x:Name="Bouton_LancementConsultation_SousTraitance" Cursor="Hand" Content="Lancement des consultations&#xD;&#xA;" Height="50" Margin="530,29.974,465,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14" BorderBrush="Red" Focusable="False">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                        <GradientStop Color="White" Offset="0"/>
+                        <GradientStop Color="#FFEBEBEB" Offset="0.5"/>
+                        <GradientStop Color="Red" Offset="0.5"/>
+                        <GradientStop Color="#FFFD8686" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button x:Name="Bouton_AlignementTechniqueOffre_SousTraitance" Cursor="Hand"  Content="Alignement technique des offres&#xD;&#xA;" Height="50" Margin="530,104,465,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14" BorderBrush="Red" Focusable="False">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                        <GradientStop Color="White" Offset="0"/>
+                        <GradientStop Color="#FFEBEBEB" Offset="0.5"/>
+                        <GradientStop Color="Red" Offset="0.5"/>
+                        <GradientStop Color="#FFFF9595" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button x:Name="Bouton_DefinitionStrategieAchat_SousTraitance" Cursor="Hand" Content="Définition de la stratégie d'achat&#xD;&#xA;" Height="50" Margin="530,220,465,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14" BorderBrush="Red" Focusable="False">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                        <GradientStop Color="White" Offset="0"/>
+                        <GradientStop Color="#FFEBEBEB" Offset="0.5"/>
+                        <GradientStop Color="Red" Offset="0.5"/>
+                        <GradientStop Color="#FFFFA0A0" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button x:Name="Bouton_NegociationPrixCondition_SousTraitance" Cursor="Hand" Content="Négociation prix et condition&#xD;&#xA;" Height="50" Margin="530,293,465,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14" BorderBrush="Red" Focusable="False">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                        <GradientStop Color="White" Offset="0"/>
+                        <GradientStop Color="#FFEBEBEB" Offset="0.5"/>
+                        <GradientStop Color="Red" Offset="0.5"/>
+                        <GradientStop Color="#FFFFB4B4" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button x:Name="Bouton_ChoixRedactionContrat_DA_SignatureDA3TCO" Cursor="Hand" Content="Choix, rédaction du contrat et de la DA&#xD;&#xA;      , signature de la DA^3 avec TCO" Height="50" Margin="530,0,465,303" VerticalAlignment="Bottom" RenderTransformOrigin="0.519,-0.5" FontWeight="Bold" FontSize="14" BorderBrush="Red" Focusable="False">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                        <GradientStop Color="White" Offset="0"/>
+                        <GradientStop Color="#FFEBEBEB" Offset="0.5"/>
+                        <GradientStop Color="Red" Offset="0.5"/>
+                        <GradientStop Color="#FFFFBABA" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button x:Name="Bouton_VerificationEnsembleDocument_TraitementAdministratif" Cursor="Hand" Content="Vérification de l'ensemble des documents&#xD;&#xA;            et traitement administratif " Height="50" Margin="530,0,465,231" VerticalAlignment="Bottom" FontWeight="Bold" FontSize="14" BorderBrush="Red" Focusable="False">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                        <GradientStop Color="White" Offset="0"/>
+                        <GradientStop Color="#FFEBEBEB" Offset="0.5"/>
+                        <GradientStop Color="Red" Offset="0.5"/>
+                        <GradientStop Color="#FFFFADAD" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button x:Name="Bouton_EnvoiSTCommandeSigne_ContratSigne2Partie" Cursor="Hand" Content="Envoi au ST de la commande signée&#xD;&#xA;   et du contrat signé des 2 parties" Height="50" Margin="530,0,465,157" VerticalAlignment="Bottom" FontWeight="Bold" FontSize="14" BorderBrush="Red" Focusable="False">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                        <GradientStop Color="White" Offset="0"/>
+                        <GradientStop Color="#FFEBEBEB" Offset="0.5"/>
+                        <GradientStop Color="Red" Offset="0.5"/>
+                        <GradientStop Color="#FFFFA9A9" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <TextBlock x:Name="textBlock3" HorizontalAlignment="Right" Height="20" Margin="0,175,235,0" TextWrapping="Wrap" Text="Validation" VerticalAlignment="Top" Width="80" FontWeight="Bold" FontSize="16" Foreground="Red"/>
+            <Image x:Name="Fleche_png1_Copy61" Margin="0,140,338.04,0" Source="Fleche.png" Stretch="Fill" Height="40.028" VerticalAlignment="Top" HorizontalAlignment="Right" Width="121.96" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="11.044"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image x:Name="Fleche_png1_Copy62" Margin="0,197,338.04,0" Source="Fleche.png" Stretch="Fill" Height="40.028" VerticalAlignment="Top" HorizontalAlignment="Right" Width="121.96" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="171.719"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Rectangle HorizontalAlignment="Right" Height="45" Margin="0,164,220,0" StrokeThickness="5" VerticalAlignment="Top" Width="115">
+                <Rectangle.Stroke>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black" Offset="0"/>
+                        <GradientStop Color="#FFFF4747" Offset="1"/>
+                    </LinearGradientBrush>
+                </Rectangle.Stroke>
+            </Rectangle>
+            <Image x:Name="Fleche_png1_Copy56" Margin="0,76,595,0" Source="Fleche.png" Stretch="Fill" Height="31.662" VerticalAlignment="Top" HorizontalAlignment="Right" Width="23.546" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="89.567"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image x:Name="Fleche_png1_Copy57" Margin="0,266,595,0" Source="Fleche.png" Stretch="Fill" Height="31.662" VerticalAlignment="Top" HorizontalAlignment="Right" Width="23.546" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="89.567"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image x:Name="Fleche_png1_Copy58" Margin="0,339,595,0" Source="Fleche.png" Stretch="Fill" Height="31.662" VerticalAlignment="Top" HorizontalAlignment="Right" Width="23.546" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="89.567"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image x:Name="Fleche_png1_Copy59" Margin="0,412,595,0" Source="Fleche.png" Stretch="Fill" Height="31.662" VerticalAlignment="Top" HorizontalAlignment="Right" Width="23.546" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="89.567"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image x:Name="Fleche_png1_Copy60" Margin="0,485,595,0" Source="Fleche.png" Stretch="Fill" Height="31.662" VerticalAlignment="Top" HorizontalAlignment="Right" Width="23.546" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="89.567"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+
+        </Grid>
+        <Grid x:Name="Grid_GererRessourceHumaine" Visibility="Hidden" >
+            <Button x:Name="Bouton_Retour134" Content="Retour" Height="40" Margin="55,24.963,0,0" VerticalAlignment="Top" Background="#FF2999D8" FontWeight="Bold" Cursor="Hand" Focusable="False" FontSize="14" HorizontalAlignment="Left" Width="95"/>
+            <Button x:Name="Bouton_DefinirCompetenceRequise" Cursor="Hand"  Content="Définir les compétences &#xD;&#xA;             requises" Height="50" Margin="540,19.963,550,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14" BorderBrush="Red" Focusable="False">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                        <GradientStop Color="White" Offset="0"/>
+                        <GradientStop Color="#FFEBEBEB" Offset="0.5"/>
+                        <GradientStop Color="#FFFF0D0D" Offset="0.5"/>
+                        <GradientStop Color="#FFFF8181" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button x:Name="Bouton_RessourceExistentInterne" Cursor="Hand" Content="Les ressources existent&#xD;&#xA;          en interne" Height="50" Margin="540,92,550,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14" BorderBrush="Red" Focusable="False">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                        <GradientStop Color="White" Offset="0"/>
+                        <GradientStop Color="#FFEBEBEB" Offset="0.5"/>
+                        <GradientStop Color="Red" Offset="0.5"/>
+                        <GradientStop Color="#FFFF8181" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button x:Name="Bouton_RessourceExistentMarcheTravail" Cursor="Hand" Content=" Les ressources existent&#xD;&#xA;sur le marche du travail" Height="50" Margin="0,160,365,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="190" FontWeight="Bold" FontSize="14" BorderBrush="Red" Focusable="False">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                        <GradientStop Color="White" Offset="0"/>
+                        <GradientStop Color="#FFEBEBEB" Offset="0.5"/>
+                        <GradientStop Color="Red" Offset="0.5"/>
+                        <GradientStop Color="#FFFF8181" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button x:Name="Bouton_RessourceInterne_BesoinFormation" Cursor="Hand" Content="Les ressources interne ont &#xD;&#xA;     besoin de formation" Height="50" Margin="350,160,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="190" FontWeight="Bold" FontSize="14" BorderBrush="Red" Focusable="False">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                        <GradientStop Color="White" Offset="0"/>
+                        <GradientStop Color="#FFEBEBEB" Offset="0.5"/>
+                        <GradientStop Color="Red" Offset="0.5"/>
+                        <GradientStop Color="#FFFF8181" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button x:Name="Bouton_EtablirPlanFormation" Cursor="Hand" Content="Etablir le plan de formation&#xD;&#xA;" Height="50" Margin="350,240,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="190" FontWeight="Bold" FontSize="14" BorderBrush="Red" Focusable="False">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                        <GradientStop Color="White" Offset="0"/>
+                        <GradientStop Color="#FFEBEBEB" Offset="0.5"/>
+                        <GradientStop Color="Red" Offset="0.5"/>
+                        <GradientStop Color="#FFFF8181" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button x:Name="Bouton_RealiserFormation" Cursor="Hand" Content="Réaliser la formation&#xD;&#xA;" Margin="350,320,0,350" HorizontalAlignment="Left" Width="190" FontWeight="Bold" FontSize="14" BorderBrush="Red" Focusable="False">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                        <GradientStop Color="#FFF3F3F3" Offset="0"/>
+                        <GradientStop Color="#FFEBEBEB" Offset="0.5"/>
+                        <GradientStop Color="Red" Offset="0.5"/>
+                        <GradientStop Color="#FFFF8181" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button x:Name="Bouton_FaireBilanFormation" Cursor="Hand" Content="Faire le bilan des&#xD;&#xA;     formations" Height="50" Margin="350,0,0,268" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="190" FontWeight="Bold" FontSize="14" BorderBrush="Red" Focusable="False">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                        <GradientStop Color="White" Offset="0"/>
+                        <GradientStop Color="#FFEBEBEB" Offset="0.5"/>
+                        <GradientStop Color="Red" Offset="0.5"/>
+                        <GradientStop Color="#FFFF8181" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button x:Name="Bouton_EnregistrerCompetenceAcquise" Cursor="Hand" Content="Enregistrer les compétences &#xD;&#xA;               acquises" Height="50" Margin="350,0,0,187" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="190" FontWeight="Bold" FontSize="14" BorderBrush="Red" Focusable="False">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                        <GradientStop Color="#FFF3F3F3" Offset="0"/>
+                        <GradientStop Color="#FFEBEBEB" Offset="0.5"/>
+                        <GradientStop Color="Red" Offset="0.5"/>
+                        <GradientStop Color="#FFFF8181" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <TextBlock x:Name="Text_Fin" HorizontalAlignment="Right" Height="30" Margin="0,243,449,0" TextWrapping="Wrap" Text="FIN" VerticalAlignment="Top" Width="30" Foreground="Red" FontSize="18" FontWeight="Bold"/>
+            <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Height="25" Margin="220,175,0,0" TextWrapping="Wrap" Text="FIN" VerticalAlignment="Top" Width="35" Foreground="Red" FontWeight="Bold" FontSize="20"/>
+            <Rectangle HorizontalAlignment="Left" Height="40" Margin="205,170,0,0" StrokeThickness="6" VerticalAlignment="Top" Width="62.5">
+                <Rectangle.Stroke>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black" Offset="0"/>
+                        <GradientStop Color="Red" Offset="1"/>
+                    </LinearGradientBrush>
+                </Rectangle.Stroke>
+            </Rectangle>
+            <Image x:Name="Fleche_png1_Copy64" Margin="0,206,451.454,0" Source="Fleche.png" Stretch="Fill" Height="31.662" VerticalAlignment="Top" RenderTransformOrigin="3.462,-1.908" HorizontalAlignment="Right" Width="23.546">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="89.567"/>
+                        <TranslateTransform X="7.022" Y="145.407"/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image x:Name="Fleche_png1_Copy71" Margin="266.161,170.937,0,0" Source="Fleche.png" Stretch="Fill" Height="33.973" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" Width="84.055">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="180.357"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image x:Name="barre_PNG3" HorizontalAlignment="Right" Margin="0,197.25,330,0" Source="barre.PNG" Stretch="Fill" Width="8.5" Height="147.75" VerticalAlignment="Top"/>
+            <TextBlock x:Name="textBlock8" HorizontalAlignment="Left" Height="20" Margin="310,155,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="40" FontWeight="Bold" Foreground="Red" FontSize="16" Text="NON"/>
+            <TextBlock x:Name="textBlock9" HorizontalAlignment="Right" Height="20" Margin="0,155,300,0" TextWrapping="Wrap" Text="NON" VerticalAlignment="Top" Width="40" Foreground="Red" FontWeight="Bold" FontSize="16"/>
+            <TextBlock x:Name="textBlock9_Copy" HorizontalAlignment="Right" Height="20" Margin="0,315,345,0" TextWrapping="Wrap" Text="NON" VerticalAlignment="Top" Width="40" Foreground="Red" FontWeight="Bold" FontSize="16"/>
+            <TextBlock x:Name="textBlock8_Copy" HorizontalAlignment="Right" Height="20" Margin="0,210,420,0" TextWrapping="Wrap" Text="OUI" VerticalAlignment="Top" Width="30" FontWeight="Bold" Foreground="Red" FontSize="16"/>
+            <TextBlock x:Name="textBlock8_Copy1" HorizontalAlignment="Left" Height="20" Margin="490,120,0,0" TextWrapping="Wrap" Text="OUI" VerticalAlignment="Top" Width="30" FontWeight="Bold" Foreground="#FF00AEFF" FontSize="16"/>
+            <Image x:Name="barre_PNG3_Copy" HorizontalAlignment="Right" Margin="0,180,343.167,0" Source="barre.PNG" Stretch="Fill" Width="8.5" Height="35" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-90.595"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image x:Name="essai_png" HorizontalAlignment="Left" Source="essai.png" Stretch="Fill" Width="31.883" Margin="428.117,0,0,317" Height="33.973" VerticalAlignment="Bottom" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="180.176"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image x:Name="essai_png_Copy" HorizontalAlignment="Left" Source="essai.png" Stretch="Fill" Width="31.883" Margin="428.117,0,0,398" Height="33.973" VerticalAlignment="Bottom" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="180.176"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image x:Name="essai_png_Copy1" HorizontalAlignment="Left" Source="essai.png" Stretch="Fill" Width="31.883" Margin="428.117,0,0,478" Height="33.973" VerticalAlignment="Bottom" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="180.176"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image x:Name="essai_png_Copy2" HorizontalAlignment="Left" Source="essai.png" Stretch="Fill" Width="31.883" Margin="428.117,0,0,236" Height="33.973" VerticalAlignment="Bottom" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="180.176"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image x:Name="essai_png_Copy3" HorizontalAlignment="Left" Source="essai.png" Stretch="Fill" Width="31.883" Margin="721,0,0,559" Height="22.937" VerticalAlignment="Bottom" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="135.243"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <TextBlock x:Name="textBlock8_Copy2" HorizontalAlignment="Right" Height="20" Margin="0,120,500,0" TextWrapping="Wrap" Text="OUI" VerticalAlignment="Top" Width="30" FontWeight="Bold" Foreground="#FF00AEFF" FontSize="16"/>
+            <Image x:Name="essai_png_Copy4" HorizontalAlignment="Left" Source="essai.png" Stretch="Fill" Width="31.883" Margin="515,0,0,560" Height="22.937" VerticalAlignment="Bottom" RenderTransformOrigin="0.5,0.5" d:LayoutOverrides="HorizontalAlignment">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="222.026"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image x:Name="barre_PNG3_Copy1" HorizontalAlignment="Right" Margin="0,14.893,443.315,0" Source="barre.PNG" Stretch="Fill" Width="8.5" Height="204.806" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-90.143"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image x:Name="barre_PNG3_Copy2" HorizontalAlignment="Right" Margin="0,112.917,345,0" Source="barre.PNG" Stretch="Fill" Width="8.5" Height="63.583" VerticalAlignment="Top"/>
+            <Image x:Name="barre_PNG3_Copy3" HorizontalAlignment="Right" Margin="0,163.566,349.977,0" Source="barre.PNG" Stretch="Fill" Width="8.5" Height="18.044" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-90.595"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+
+            <Rectangle HorizontalAlignment="Right" Height="40" Margin="0,235,433.75,0" VerticalAlignment="Top" Width="61.25" StrokeThickness="6">
+                <Rectangle.Stroke>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black" Offset="0"/>
+                        <GradientStop Color="Red" Offset="1"/>
+                    </LinearGradientBrush>
+                </Rectangle.Stroke>
+            </Rectangle>
+            <Image x:Name="Image16_png" Height="19" Source="Image16.png" Stretch="Fill" VerticalAlignment="Top" Margin="540,335,330,0" Panel.ZIndex="-1"/>
+            <Image x:Name="essai_png_Copy5" Source="essai.png" Stretch="Fill" Margin="618.117,0,630,627" Height="24.473" VerticalAlignment="Bottom" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="180.176"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+
+
+
+        </Grid>
+        <Grid x:Name="Grid_PreparationAffaire" Visibility="Hidden">
+            <Button x:Name="Bouton_Retour135" Content="Retour" Height="40" Margin="55,24.963,0,0" VerticalAlignment="Top" Background="#FF2999D8" FontWeight="Bold" Cursor="Hand" Focusable="False" FontSize="14" HorizontalAlignment="Left" Width="95"/>
+            <TextBlock x:Name="Text_descriptPreparationAffaire" Text="Cette partie est toujours en développement" Height="40" Margin="410,100,410,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="22" Foreground="Black"/>
+            <Button x:Name="Bouton_PriseConnaissance" Cursor="Hand" Content="Prise de connaissance" Height="55" Margin="525,235,540,0" VerticalAlignment="Top" Background="#FFDADADA" BorderBrush="#FFFF821B" FontWeight="Bold" FontSize="14" Focusable="False"/>
+            <Button x:Name="Bouton_PhaseAdministratif" Cursor="Hand" Content="Phase administratif" Margin="525,0,540,275" Width="215" Height="55" VerticalAlignment="Bottom" d:LayoutOverrides="Height" BorderBrush="#FFFF821B" Background="#FFDADADA" FontWeight="Bold" FontSize="14" Focusable="False"/>
+
+        </Grid>
+        <Grid x:Name="Grid_PriseConnaissance" Visibility="Hidden" >
+            <Button x:Name="Bouton_Retour136" Content="Retour" Height="40" Margin="55,24.963,0,0" VerticalAlignment="Top" Background="#FF2999D8" FontWeight="Bold" Cursor="Hand" Focusable="False" FontSize="14" HorizontalAlignment="Left" Width="95"/>
+            <ScrollViewer Margin="95,145,80,220" >
+                <TextBlock x:Name="Text_DescriptPriseConnaissance" Foreground="Black" FontSize="16" FontWeight="Bold"><Run Text="Après réalisation de la revue de transfert (RC3) le responsable d'affaire s'attachera à préparer l'opération par les étapes"/><Run Text=" "/><Run Text="préliminaires "/><LineBreak/><Run Text="suivantes :"/><LineBreak/><Run/><LineBreak/><Run Text="&#x9;"/><Run Text="- Lecture des pièces marche (CCTP, CCAP, Pièces Graphoqies, planning opération...) avec annotations / questions / "/><LineBreak/><Run Text="&#x9;"/><Run Text="incohérences à relever."/><LineBreak/><Run Text="&#x9;"/><Run Text="- 1ère visite de chantier (1ère approche)"/><LineBreak/><Run/><LineBreak/><Run Text="Suite à la réunion de revue de transfert(RC3), récupération des éléments de passation suivantes :"/><LineBreak/><Run/><LineBreak/><Run Text="&#x9;- liste de documents contractuelles et documents listés (plans, schémas, pièces administratives, ...)"/><LineBreak/><Run Text="&#x9;- Identification des éventuels documents manquants et demande de diffusion officielle"/><LineBreak/><Run Text="&#x9;- Lecture du mémoire technique"/><LineBreak/><Run Text="&#x9;- Point avec le service projet sur les additifs / Options/variantes retenues ou non..."/><LineBreak/><Run Text="&#x9;- Version DPGF -FDV-DEBOURS en excel à récupérer"/><LineBreak/><Run Text="&#x9;- Réalisation des budgets par famille et par zone (selon fichier excel joint)"/><LineBreak/><Run Text="&#x9;- Création de la VE initiale y compris staff plan projeté, récapitulatif par famille et zones,..."/><LineBreak/><Run/><LineBreak/><Run Text="Prise de contact des acteurs projets (Nom - Téléphone -@...)"/><Run Text="."/><LineBreak/><Run/><LineBreak/><Run Text="Préparation de l'organisation chantier : identification des ressources nécessaires interne TZ (RA - ARA - CCH - Chef d'équipe...)+"/><LineBreak/><Run Text="externe"/><Run Text=" "/><Run Text="(études,ST ,...)"/><Run Text="."/><LineBreak/><Run/><LineBreak/><Run Text="Etablir et fournir la liste des pré requis étude (Fonds de plan, FDP Synth"/><Run Text="è"/><Run Text="se,"/><Run Text=" fiche technique,  cartouche exemple, FQR, charte "/><LineBreak/><Run Text="graphique,"/><Run Text=" "/><Run Text="charte BIM...)"/><Run Text="."/><LineBreak/><Run/><LineBreak/><Run Text="Projection d'achat à faire avec acheteur sur la base de la Recap Débours et organisation d'un rendez-vous de présentation (CG/RA/"/><LineBreak/><Run Text="Achats)"/><Run Text="."/><LineBreak/><Run/><LineBreak/><Run/></TextBlock>
+            </ScrollViewer>
+            <TextBlock x:Name="Text_PriseConnaissance" Text="Prise de connaissance" Width="170" Height="28" Margin="565,30,545,0" VerticalAlignment="Top" d:LayoutOverrides="Height" FontSize="16" Foreground="Black" FontWeight="Bold"></TextBlock>
+            <Rectangle Height="55" Margin="530,15,520,0" VerticalAlignment="Top" StrokeThickness="10">
+                <Rectangle.Stroke>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black" Offset="0"/>
+                        <GradientStop Color="#FFEA6D33" Offset="1"/>
+                    </LinearGradientBrush>
+                </Rectangle.Stroke>
+            </Rectangle>
+
+        </Grid>
+        <Grid x:Name="Grid_PhaseAdministratif" Visibility="Hidden" >
+            <Button x:Name="Bouton_Retour137" Content="Retour" Height="40" Margin="55,24.963,0,0" VerticalAlignment="Top" Background="#FF2999D8" FontWeight="Bold" Cursor="Hand" Focusable="False" FontSize="14" HorizontalAlignment="Left" Width="95"/>
+            <TextBlock x:Name="Text_PhaseAdministratif" Text="Phase Administratif" Height="25" Margin="565,45,565,0" VerticalAlignment="Top" d:LayoutOverrides="Height" Foreground="Black" FontWeight="Bold" FontSize="16"/>
+            <TextBlock x:Name="Text_DescriptPhaseAdministratif" Margin="165,125,175,110" Foreground="Black" FontSize="16" FontWeight="Bold"><Run Text="Après la prise de connaissance, il faudra préparer :"/><LineBreak/><Run/><LineBreak/><Run Text="&#x9;Situation de travaux (préparer un fichier et faire valider par le client la présentation souhaitée)"/><LineBreak/><Run Text="&#x9;Proposer un échéancier de facturation études et travaux"/><LineBreak/><Run/><LineBreak/><Run Text="&#x9;"/><Run Text="Fiche budgétaire + budget (base sur FDV pour saisie CODEX RAC)"/><LineBreak/><Run Text="&#x9;"/><Run Text="&#x9;"/><Run Text="- Transmission à CE + RAC pour validation"/><LineBreak/><Run Text="&#x9;"/><Run Text="&#x9;"/><Run Text="- Analyse des potes / PLN charge à risque"/><LineBreak/><Run/><LineBreak/><Run Text="&#x9;"/><Run Text="Planning enveloppe interne Tunzini prévisionnel"/><LineBreak/><Run Text="&#x9;"/><Run Text="Préparation dossier affaire numérique / papier"/><LineBreak/><Run Text="&#x9;"/><Run Text="Liste d'échantillons (présentation des  équipements CVCD-PLB)"/><LineBreak/><Run/><LineBreak/><Run Text="&#x9;"/><Run Text="Présence de BAP (Boite à plan) / plateforme livraison chantier."/><LineBreak/><Run Text="&#x9;"/><Run Text="&#x9;"/><Run Text="- Qui s'en charge"/><LineBreak/><Run Text="&#x9;"/><Run Text="&#x9;"/><Run Text="- Formation"/><LineBreak/><Run/><LineBreak/><Run Text="&#x9;"/><Run Text="Faire courbe d'effectif prévisionnelle"/><LineBreak/><Run Text="&#x9;"/><Run Text="Livret d'accueil ( donner le PPSPS pour le faire)"/><LineBreak/><Run Text="&#x9;"/><Run Text="Diffusion du PAQ (plan d'action qualité entreprise) ou prendre celui de l'EG."/><LineBreak/><Run Text="&#x9;"/><Run Text="Diffusion du PQA (plan de qualité d'air)"/><LineBreak/><Run Text="&#x9;"/><Run Text="Demander au client un espace de bureau + zone de bureau pour le CC / cas échéant réaliser son propre magasin."/><LineBreak/><Run/></TextBlock>
+            <Rectangle Height="60" Margin="525,25,525,0" VerticalAlignment="Top" StrokeThickness="10">
+                <Rectangle.Stroke>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black" Offset="0"/>
+                        <GradientStop Color="#FFFF6126" Offset="1"/>
+                    </LinearGradientBrush>
+                </Rectangle.Stroke>
+            </Rectangle>
+
+        </Grid>
+        <Grid x:Name="Grid_DefinirBesoinMainOeuvre" Visibility="Hidden" >
+            <Button x:Name="Bouton_Retour138" Content="Retour" Height="40" Margin="55,24.963,0,0" VerticalAlignment="Top" Background="#FF2999D8" FontWeight="Bold" Cursor="Hand" Focusable="False" FontSize="14" HorizontalAlignment="Left" Width="95"/>
+            <TextBlock x:Name="Text_DefinirBesoinMainOeuvre" Text="Definir les besoins en main d'oeuvre" Height="25" RenderTransformOrigin="0.5,-4.3" Margin="500,55,500,0" VerticalAlignment="Top" d:LayoutOverrides="Height" Foreground="#FF0EE248" FontWeight="Bold" FontSize="16"/>
+            <TextBlock x:Name="Text_DescriptDefinirBesoinMainOeuvre" Text="Cette partie est toujours en développement" Height="35" Margin="410,220,410,0" VerticalAlignment="Top" d:LayoutOverrides="Height" Foreground="Black" FontWeight="Bold" FontSize="22"/>
+            <Rectangle Height="60" Margin="465,35,470,0" StrokeThickness="10" VerticalAlignment="Top">
+                <Rectangle.Stroke>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black" Offset="0"/>
+                        <GradientStop Color="#FF1FC545" Offset="1"/>
+                    </LinearGradientBrush>
+                </Rectangle.Stroke>
+            </Rectangle>
+        </Grid>
+        <Grid x:Name="Grid_ConsultationFournisseur" Visibility="Hidden">
+            <Button x:Name="Bouton_Retour139" Content="Retour" Height="40" Margin="55,24.963,0,0" VerticalAlignment="Top" Background="#FF2999D8" FontWeight="Bold" Cursor="Hand" Focusable="False" FontSize="14" HorizontalAlignment="Left" Width="95"/>
+            <TextBlock x:Name="Text_ConsultationFournisseur" Text="Consultation Fournisseur" Width="200" Height="25" Margin="555,30,525,0" VerticalAlignment="Top" d:LayoutOverrides="Height" Foreground="#FF2CBB7A" FontWeight="Bold" FontSize="16"></TextBlock>
+            <TextBlock x:Name="Text_DescriptConsultationFournisseur" Foreground="Black" FontWeight="Bold" FontSize="16" Margin="150,135,170,325"><Run Text="Pour la consultation fournisseur il faut :"/><LineBreak/><Run/><LineBreak/><Run Text="&#x9;"/><Run Text="- "/><Run Text="Préparer les AO des fournisseurs avec les spécificités du projet ( CCTP, MES, REX...)"/><LineBreak/><Run Text="&#x9;"/><Run Text="- "/><Run Text="Prendre  des estimations sur les valeurs non connues ( estim PDC...)"/><LineBreak/><Run Text="&#x9;"/><Run Text="- "/><Run Text="Réaliser un r"/><Run Text="endez- vous"/><Run Text=" "/><Run Text=" sur la stratégie ACHAT avec l'acheteur"/><Run Text="."/><LineBreak/><Run Text="&#x9;"/><Run Text="- "/><Run Text="Monter une l"/><Run Text="iste des consultations et matériels"/><Run Text="."/><LineBreak/><Run Text="&#x9;- "/><Run Text="Un c"/><Run Text="hoix des fournisseurs"/><LineBreak/><Run Text="&#x9;- "/><Run Text="Une r"/><Run Text="éalisation d'un TCO en respectant les consignes selon le seuils d'achat"/><LineBreak/><Run Text="&#x9;- "/><Run Text="Une d"/><Run Text="iffusion des FT"/><LineBreak/><Run Text="&#x9;- "/><Run Text="Une "/><Run Text="Réalisation de la demande d'achat"/><LineBreak/><Run Text="&#x9;- "/><Run Text="Commande"/></TextBlock>
+            <Button x:Name="Bouton_TCO" Content="TCO" HorizontalAlignment="Left" Height="70" Margin="200,0,0,220" VerticalAlignment="Bottom" Width="150" BorderBrush="#FF37DA89" Focusable="False" Cursor="Hand" FontWeight="Bold" FontSize="14">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                        <GradientStop Color="#FFF3F3F3" Offset="0"/>
+                        <GradientStop Color="#FFEBEBEB"/>
+                        <GradientStop Color="#FFDDDDDD"/>
+                        <GradientStop Color="#FFE2E4E3" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button x:Name="Bouton_DA" Cursor="Hand" Content="DA" Height="70" Margin="510,0,620,220" VerticalAlignment="Bottom" BorderBrush="#FF37DA89" FontWeight="Bold" FontSize="14" Focusable="False">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                        <GradientStop Color="#FFF3F3F3" Offset="0"/>
+                        <GradientStop Color="#FFEBEBEB"/>
+                        <GradientStop Color="#FFDDDDDD"/>
+                        <GradientStop Color="#FFE2E4E3" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Rectangle Height="65" Margin="510,10,490,0" StrokeThickness="10" VerticalAlignment="Top">
+                <Rectangle.Stroke>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black" Offset="0"/>
+                        <GradientStop Color="#FF1FC545" Offset="1"/>
+                    </LinearGradientBrush>
+                </Rectangle.Stroke>
+            </Rectangle>
+        </Grid>
+        <Grid x:Name="Grid_ConsultationSousTraitant" Visibility="Hidden" >
+            <Button x:Name="Bouton_Retour140" Content="Retour" Height="40" Margin="55,24.963,0,0" VerticalAlignment="Top" Background="#FF2999D8" FontWeight="Bold" Cursor="Hand" Focusable="False" FontSize="14" HorizontalAlignment="Left" Width="95"/>
+            <TextBlock x:Name="Text_ConsultationSousTraitant" Text="Consultation sous-traitant" Height="25" Width="200" Margin="540,55,540,0" VerticalAlignment="Top" d:LayoutOverrides="Height" Foreground="#FF2ABF52" FontWeight="Bold" FontSize="16"></TextBlock>
+            <TextBlock x:Name="Text_DescriptConsultationSousTraitant" Width ="950" Height="450" Margin="160,160,170,110" Foreground="Black" FontWeight="Bold" FontSize="16"><Run Text="Pour la consultation sous-traitant il faut :"/><LineBreak/><Run Text="&#x9;"/><LineBreak/><Run Text="&#x9;- Préparer les registres de consultation des ST avec les spécificités du projet"/><LineBreak/><Run Text="&#x9;- Une stratégie  "/><Run Text="ACHAT avec l'acheteur"/><LineBreak/><Run Text="&#x9;- Les consultations sur la base du DCE pour caler  et vérifier les budgets de la feuille de vente"/><LineBreak/><Run Text="&#x9;- Un choix des ST"/><LineBreak/><Run Text="&#x9;- Une réalisation d'un TCO en respectant les consignes selon les seuils d'achat"/><LineBreak/><Run Text="&#x9;- Une réalisation de la demande d'achat"/><LineBreak/><Run Text="&#x9;- Un agrément de sous-traitance à valider par le client"/><LineBreak/><Run/><LineBreak/><Run Text="Les consultations à préparer :"/><LineBreak/><Run/><LineBreak/><Run Text="&#x9;- Gaine "/><LineBreak/><Run Text="&#x9;- Tuyauterie"/><LineBreak/><Run Text="&#x9;- Calorifuge"/><LineBreak/><Run Text="&#x9;- Manutention"/><LineBreak/><Run Text="&#x9;- Plafonds rayonnants"/><LineBreak/><Run Text="&#x9;- Elec"/><LineBreak/><Run Text="&#x9;- Régulation"/><LineBreak/><Run Text="&#x9;- Diver"/><LineBreak/><Run Text="&#x9;&#x9; "/><LineBreak/></TextBlock>
+            <Rectangle Height="65" Margin="505,35,505,0" VerticalAlignment="Top" StrokeThickness="10">
+                <Rectangle.Stroke>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black" Offset="0"/>
+                        <GradientStop Color="#FF2ABF52" Offset="1"/>
+                    </LinearGradientBrush>
+                </Rectangle.Stroke>
+            </Rectangle>
+            <Button x:Name="Bouton_TCO_ConsultationSousTraitant" Cursor="Hand"  Content="TCO" Height="55" Width="130" HorizontalAlignment="Right" Margin="0,0,500,150" VerticalAlignment="Bottom" BorderBrush="#FF1FFF52" FontWeight="Bold" FontSize="14" Focusable="False">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                        <GradientStop Color="#FFF3F3F3" Offset="0"/>
+                        <GradientStop Color="#FFEBEBEB"/>
+                        <GradientStop Color="#FFDDDDDD"/>
+                        <GradientStop Color="#FFCDCDCD" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button x:Name="Bouton_DA_ConsultationSousTraitabt" Cursor="Hand"  Content="DA" Height="55" Margin="0,0,330,150" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="130" BorderBrush="#FF1FFF52" FontWeight="Bold" FontSize="14" Focusable="False">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                        <GradientStop Color="#FFF3F3F3" Offset="0"/>
+                        <GradientStop Color="#FFEBEBEB"/>
+                        <GradientStop Color="#FFDDDDDD"/>
+                        <GradientStop Color="#FFCDCDCD" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+        </Grid>
+
+        <Image x:Name="Image151_png" Source="Image50.png" Stretch="Fill" Panel.ZIndex="-1"/>
 
 
 
