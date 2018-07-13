@@ -2,7 +2,7 @@ Class Qualite
 
 
 
-    Private Sub Operationnel_Click(sender As Object, e As RoutedEventArgs) Handles Operationnel.Click
+    Private Sub Bouton_Operationnel_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Operationnel.Click
         Grid_Qualité.Visibility = Visibility.Hidden
         GridMaitrise_Ope.Visibility = Visibility.Visible
 
@@ -854,13 +854,13 @@ Class Qualite
     End Sub
 
     Private Sub Bouton_Retour66_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Retour66.Click
-        Grid_PasserCommande_DefinirBesoinMainOeuvre.Visibility = Visibility.Hidden
+        Grid_PasserCommande.Visibility = Visibility.Hidden
         Grid_RealiserChantier.Visibility = Visibility.Visible
     End Sub
 
-    Private Sub Bouton_PasserCommande_DefinirBesoinMainOeuvre_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_PasserCommande_DefinirBesoinMainOeuvre.Click
+    Private Sub Bouton_PasserCommande_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_PasserCommande.Click
         Grid_RealiserChantier.Visibility = Visibility.Hidden
-        Grid_PasserCommande_DefinirBesoinMainOeuvre.Visibility = Visibility.Visible
+        Grid_PasserCommande.Visibility = Visibility.Visible
     End Sub
 
     Private Sub Bouton_Retour67_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Retour67.Click
@@ -1511,5 +1511,125 @@ Class Qualite
     Private Sub Bouton_ClotureChantier_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_ClotureChantier.Click
         GridMaitrise_Ope.Visibility = Visibility.Hidden
         Grid_CloreChantier.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_Retour129_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Retour129.Click
+        Grid_DirigerSociete.Visibility = Visibility.Hidden
+        Grid_Qualité.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_DirigerSociete_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_DirigerSociete.Click
+        Grid_Qualité.Visibility = Visibility.Hidden
+        Grid_DirigerSociete.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_Retour130_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Retour130.Click
+        Grid_Achat.Visibility = Visibility.Hidden
+        Grid_Qualité.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_Achat_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Achat.Click
+        Grid_Qualité.Visibility = Visibility.Hidden
+        Grid_Achat.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_Retour131_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Retour131.Click
+        Grid_MaterielStandard.Visibility = Visibility.Hidden
+        Grid_Achat.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_MaterielStandard_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_MaterielStandard.Click
+        Grid_Achat.Visibility = Visibility.Hidden
+        Grid_MaterielStandard.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_Retour132_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Retour132.Click
+        Grid_MaterielSpecifique.Visibility = Visibility.Hidden
+        Grid_Achat.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_MaterielSpecifique_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_MaterielSpecifique.Click
+        Grid_Achat.Visibility = Visibility.Hidden
+        Grid_MaterielSpecifique.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_Retour133_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Retour133.Click
+        Grid_SousTraitance.Visibility = Visibility.Hidden
+        Grid_Achat.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_SousTraitance_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_SousTraitance.Click
+        Grid_Achat.Visibility = Visibility.Hidden
+        Grid_SousTraitance.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_Retour134_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Retour134.Click
+        Grid_GererRessourceHumaine.Visibility = Visibility.Hidden
+        Grid_Qualité.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_GererRessourceHumaine_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_GererRessourceHumaine.Click
+        Grid_Qualité.Visibility = Visibility.Hidden
+        Grid_GererRessourceHumaine.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_Retour135_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Retour135.Click
+        Grid_PreparationAffaire.Visibility = Visibility.Hidden
+        GridMaitrise_Ope.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_PreparationAff_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_PreparationAff.Click
+        GridMaitrise_Ope.Visibility = Visibility.Hidden
+        Grid_PreparationAffaire.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_Retour136_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Retour136.Click
+        Grid_PriseConnaissance.Visibility = Visibility.Hidden
+        Grid_PreparationAffaire.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_PriseConnaissance_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_PriseConnaissance.Click
+        Grid_PreparationAffaire.Visibility = Visibility.Hidden
+        Grid_PriseConnaissance.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_Retour137_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Retour137.Click
+        Grid_PhaseAdministratif.Visibility = Visibility.Hidden
+        Grid_PreparationAffaire.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_PhaseAdministratif_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_PhaseAdministratif.Click
+        Grid_PreparationAffaire.Visibility = Visibility.Hidden
+        Grid_PhaseAdministratif.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_Retour138_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Retour138.Click
+        Grid_DefinirBesoinMainOeuvre.Visibility = Visibility.Hidden
+        Grid_RealiserChantier.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_DefinirBesoinMainOeuvre_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_DefinirBesoinMainOeuvre.Click
+        Grid_RealiserChantier.Visibility = Visibility.Hidden
+        Grid_DefinirBesoinMainOeuvre.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_Retour139_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Retour139.Click
+        Grid_ConsultationFournisseur.Visibility = Visibility.Hidden
+        Grid_PasserCommande.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_ConsultationFournisseur_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_ConsultationFournisseur.Click
+        Grid_PasserCommande.Visibility = Visibility.Hidden
+        Grid_ConsultationFournisseur.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_ConsultationSousTraitant_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_ConsultationSousTraitant.Click
+        Grid_PasserCommande.Visibility = Visibility.Hidden
+        Grid_ConsultationSousTraitant.Visibility = Visibility.Visible
+    End Sub
+
+    Private Sub Bouton_Retour140_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_Retour140.Click
+        Grid_ConsultationSousTraitant.Visibility = Visibility.Hidden
+        Grid_PasserCommande.Visibility = Visibility.Visible
     End Sub
 End Class
