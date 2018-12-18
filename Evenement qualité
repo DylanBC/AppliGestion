@@ -46,7 +46,7 @@ Class Qualite
     Private Sub Bouton_TableauAffaire_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_TableauAffaire.Click
         Process.Start("Q:\Processus Qualité\Maitrise Opérationnel\Répondre à une affaire\Décision d'Etude\Tableau des affaires")
     End Sub
-
+// voici mon événement
     Private Sub Bouton_GuideAnalyse_Click(sender As Object, e As RoutedEventArgs) Handles Bouton_GuideAnalyse.Click
         Process.Start("Q:\Processus Qualité\Maitrise Opérationnel\Répondre à une affaire\Décision d'Etude\Guide Analyse de risque")
     End Sub
